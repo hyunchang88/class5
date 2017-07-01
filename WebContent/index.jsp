@@ -13,7 +13,10 @@
 <title>index.jsp</title>
 <!-- bootstrap.css 로딩하기 -->
 <link rel="stylesheet" href="../resource/css/bootstrap.css" />
+<link rel="stylesheet" href="css/font-awesome.css"/>
+<link rel="stylesheet" href="js/DB_navi24.css" type="text/css"></link>
 <style>
+	
 		body{
 			margin: 0;
 			/* 상단 fixed 된 요소에 가려진 내용을 볼수 있도록 */
@@ -53,6 +56,19 @@
 		#content{
 			border-left: 200px solid yellow;
 			border-right: 200px solid pink;
+	       }
+		/* 로그인 회원가입 고객센터*/
+	       .log1 li{
+		      list-style-type: none;
+		      float:left;
+		      padding-right: 12px;
+		   }
+		 .log1 li a{
+		      padding : 5px;
+		   }
+	     /* 전화번호 */
+		.phone{
+			font-size: 25px;
 		}
 	</style>
 </head>
@@ -73,7 +89,85 @@
 			<li><a href="member/play.jsp">회원전용 공간으로 가기</a></li>
 		</ul>
 	</div>
-	
+	<div class="container">
+	<div style="margin: 20px 0;"></div>
+		</div>
+		<div class="container">
+		   <div class="row">
+		      <div class="col-xs-2 col-xs-offset-5">
+			 <img src="images/logo.png" alt="" style="width: 100px;height: 60px" />
+		      </div>
+		      <div class="col-xs-3 col-xs-offset-2 phone" style="text-align: right;">
+			   <i class="fa fa-phone"></i>1600-3069
+		      </div>
+		   </div>
+		</div> 
+	<div class="container">
+	<div class="row">
+		<div>
+			<div id="DB_navi24">
+				<div class="DB_wrap">
+					<h1 style="font-weight: bold; font-family: arial;">이집닥</h1>
+					<ul class="DB_main" style="color: black">
+						<li><a href="#">갤러리</a></li>
+						<li><a href="#">커뮤니티</a></li>
+						<li><a href="#">매거진</a></li>
+						<li><a href="#">파트너스</a></li>
+						<li><a href="#">견적상담</a></li>
+						<li><a href="#">스토어</a></li>
+					</ul>
+				</div>
+				<div class="DB_mask">
+					<div class="DB_move">
+						
+						<div class="DB_subSet">
+							
+							<ul>
+								<!--이미지메뉴인 경우-->
+								<li><a href="#">주거공간</a></li>
+								<li><a href="#">사무공간</a></li>
+								<li><a href="#">부분시공</a></li>
+								<li></li>
+							</ul>		
+							<ul>
+								<!--텍스트메뉴인 경우-->
+								<li><a href="#">궁금해요</a></li>
+								<li><a href="#">내방어때요</a></li>
+								<li><a href="#">집닥후기</a></li>
+								<li></li>
+							</ul>		
+							<ul>
+								<li><a href="#">인테리어 팁</a></li>
+								<li><a href="#">집닥맨 다이어리</a></li>
+								<li><a href="#">집닥 소식</a></li>
+								<li><a href="#">집닥 이벤트</a></li>
+							</ul>		
+							<ul>
+								<li><a href="#">파트너스 목록</a></li>
+								<li><a href="#">파트너스 문의</a></li>
+								<li><a href="#">자료실</a></li>
+								<li></li>
+							</ul>
+							<ul>
+								<li><a href="#">상세견적상담</a></li>
+								<li><a href="#">견적신청현황</a></li>
+								<li><a href="#">협의확인서현황</a></li>
+								<li></li>
+							</ul>
+							<ul>
+								<li><a href="#">집닥이 야심차게<br />
+							        <span style="margin: 1px"></span>준비한 특별한<br />
+								 <span style="margin: 1px"></span>상품을 만나보세요</a></li>
+								<li></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>	
 <!-- 	<div id="navi2">
 		<ul>
 			<li><a href="#">One</a></li>
@@ -96,6 +190,18 @@
 	</div>
 
 <script src="../resource/js/jquery-3.2.0.js"></script>
-
+<script type="text/javascript">
+		$('#DB_navi24').DB_naviFullWideMove({
+			key:'c37080',                 //라이센스키
+			pageNum:3,           //메인메뉴 페이지인식(1~)
+			subNum:1,            //서브메뉴 페이지인식(1~)
+			subState:false,         //메뉴활성시 서브메뉴의 오픈유무(true,false)
+			motionSpeed:300,        //모션속도(밀리초)
+			delayTime:100             //메뉴아웃시 되돌아가는 딜레이시간(밀리초)
+		});
+</script>
+<div class="container-fluid">
+	<div style="height:500px; background:url('images/main.jpg') no-repeat center;"></div>
+</div>
 </body>
 </html>
