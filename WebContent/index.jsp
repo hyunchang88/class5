@@ -13,8 +13,8 @@
 <title>index.jsp</title>
 <!-- bootstrap.css 로딩하기 -->
 <link rel="stylesheet" href="../resource/css/bootstrap.css" />
-<link rel="stylesheet" href="css/font-awesome.css"/>
-<link rel="stylesheet" href="js/DB_navi24.css" type="text/css"></link>
+<link rel="stylesheet" href="../resource/css/font-awesome.css"/>
+<link rel="stylesheet" href="../resource/js/DB_navi24.css" type="text/css"></link>
 <style>
 	
 		body{
