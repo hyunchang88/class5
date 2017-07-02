@@ -75,7 +75,7 @@
 
 <h3>인덱스 페이지 입니다.</h3>
 <div id="navbar">
-	<h3>navbar 위치할 공간</h3>
+	<!-- <h3>navbar 위치할 공간</h3> -->
 	<%if( id != null ){ %>
 		<p> <strong><a href="users/private/info.jsp"><%=id %></a></strong> 회원님 로그인 중....</p>
 		<a href="users/signout.jsp">로그아웃</a>
@@ -146,27 +146,30 @@
 		</div>	
 	</div>
 </div>	
-</div>
+</div> <!-- <div id="navbar"> end-->
+
 <div id="navi">
-		<ul>
-			<li><a href="users/signup_form.jsp">회원가입</a></li>
-			<li><a href="users/signin_form.jsp?url=<%=cPath%>">로그인</a></li>
-			<li><a href="member/play.jsp">회원전용 공간으로 가기</a></li>
-		</ul>
-	</div>
-	<div class="container">
+	<ul>
+		<li><a href="users/signup_form.jsp">회원가입</a></li>
+		<li><a href="users/signin_form.jsp?url=<%=cPath%>">로그인</a></li>
+		<li><a href="member/play.jsp">회원전용 공간으로 가기</a></li>
+	</ul>
+</div>
+
+<div class="container">
 	<div style="margin: 20px 0;"></div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-2 col-xs-offset-5">
+			<img src="resource/images/logo.png" alt="" style="width: 100px;height: 60px" />
 		</div>
-		<div class="container">
-		   <div class="row">
-		      <div class="col-xs-2 col-xs-offset-5">
-			 <img src="resource/images/logo.png" alt="" style="width: 100px;height: 60px" />
-		      </div>
-		      <div class="col-xs-3 col-xs-offset-2 phone" style="text-align: right;">
-			   <i class="fa fa-phone"></i>1600-3069
-		      </div>
-		   </div>
-		</div> 
+		<div class="col-xs-3 col-xs-offset-2 phone" style="text-align: right;">
+			<i class="fa fa-phone"></i>1600-3069
+		</div>
+   </div>
+</div> 
 
 <script type="text/javascript">
 		$('#DB_navi24').DB_naviFullWideMove({
@@ -178,6 +181,7 @@
 			delayTime:100             //메뉴아웃시 되돌아가는 딜레이시간(밀리초)
 		});
 </script>
+
 <div class="container-fluid">
 	<div style="height:500px; background:url('resource/images/main.jpg') no-repeat center;"></div>
 </div>
