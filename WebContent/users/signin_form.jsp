@@ -43,7 +43,7 @@
 			</div>
 			
 			<button type="submit" class="btn btn-primary">로그인</button>
-			<button type="reset" class="btn btn-warning">취소</button>
+			<button type="reset" class="btn btn-warning"  onclick="location.href='../index.jsp'">뒤로</button>
 		</form>
 		</div>
 	</div>
