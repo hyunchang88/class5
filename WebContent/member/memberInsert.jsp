@@ -10,40 +10,6 @@
 
 <body>
 	<div class="container-fluid">
-		<div class="row headerMenu">
-			<div class="col-xs-12">headerMenu</div>
-		</div>
-
-		<div class="row headerTitle">
-			<div class="col-xs-12">
-				<a href="/index.html">koreabin.com</a>
-			</div>
-		</div>
-
-		<div class="row menuBar">
-			<div class="col-xs-8 col-xs-offset-2 mainMenu">
-				<ul class="mainMenuUl">
-					<li class="mainMenuLi">
-						<a href="/myForm/memberForm.html">회원가입</a>
-					</li>
-					<li class="mainMenuLi">
-						<a href="/myForm/loginForm.html">로그인</a>
-					</li>
-					<li class="mainMenuLi">
-						<a href="/myForm/memberList.html">회원가입 현황</a>
-					</li>
-					<li class="mainMenuLi">
-						<a href="/myForm/menu4000.html">메뉴-4000</a>
-					</li>
-					<li class="mainMenuLi">
-						<a href="/myForm/menu5000.html">메뉴-5000</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<div id="mainDiv">
 		<div class="row contents">
 			<div class="col-xs-3 leftContents">
 				<div class="leftForm"></div>
@@ -56,22 +22,22 @@
 
 						<div class="form-group">
 							<label for="name">이름</label>
-							<input type="text" class="form-control" id="name" name="name" placeholder="필수 입력사항입니다." />
+							<input type="text" class="form-control" id="name" name="name" />
 							<p class="help-block">이름은 필수 입력사항입니다.</p>
 						</div>
 						<div class="form-group">
 							<label for="id">아이디</label>
-							<input type="text" class="form-control" id="id" name="id" placeholder="필수 입력사항입니다." />
+							<input type="text" class="form-control" id="id" name="id" />
 							<p class="help-block">아이디는 (6~30)글자 입니다.</p>
 						</div>
 						<div class="form-group">
 							<label for="pwd">비밀번호</label>
-							<input type="password" class="form-control" id="pwd" name="pwd" placeholder="필수 입력사항입니다." />
+							<input type="password" class="form-control" id="pwd" name="pwd" />
 							<p class="help-block">(영문+숫자) 6글자 이상입니다.</p>
 						</div>
 						<div class="form-group">
 							<label for="pwd2">비밀번호확인</label>
-							<input type="password" class="form-control" id="pwd2" name="pwd2" placeholder="필수 입력사항입니다." />
+							<input type="password" class="form-control" id="pwd2" name="pwd2" />
 							<p class="help-block">입력한 비밀번호와 다릅니다.</p>
 						</div>
 						<div class="form-group">
@@ -119,14 +85,7 @@
 					</div>
 				</form>
 			</div>
-			<div class="col-xs-3 rightContents">
-				<div class="rightForm"></div>
-			</div>
 		</div>
-
-		<div class="row footer">
-			<div class="col-xs-12 address"></div>
-		</div>	
 	</div>
 </body>
 </html>
