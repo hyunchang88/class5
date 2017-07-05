@@ -101,7 +101,7 @@
 						<div class="DB_subSet">
 							
 							<ul>
-								<!--이미지메뉴인 경우-->
+								<!-- work -->
 								<li><a href="#">리스트</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
@@ -115,17 +115,20 @@
 								<li></li>
 							</ul>		
 							<ul>
+								<!-- member -->
 								<li><a href="#">리스트</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
 							</ul>		
 							<ul>
+								<!-- orderRequest -->
 								<li><a href="#">리스트</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
 								<li></li>
 							</ul>
 							<ul>
+								<!-- board -->
 								<li><a href="#">리스트</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
