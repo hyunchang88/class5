@@ -102,10 +102,10 @@
 								
 								<ul>
 									<!-- work -->
-									<li><a href="#">리스트</a></li>
-									<li><a href="#">삽입</a></li>
-									<li><a href="#">수정</a></li>
-									<li><a href="#">삭제</a></li>
+									<li><a href="work/workList.jsp">리스트</a></li>
+									<li><a href="work/workInsert.jsp">삽입</a></li>
+									<li><a href="work/workUpdate.jsp">수정</a></li>
+									<li><a href="work/workDelete.jsp">삭제</a></li>
 									<li></li>
 								</ul>		
 								<ul><!-- company -->
