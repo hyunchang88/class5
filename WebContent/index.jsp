@@ -80,79 +80,76 @@
 		<p> <strong><a href="users/private/info.jsp"><%=id %></a></strong> 회원님 로그인 중....</p>
 		<a href="users/signout.jsp">로그아웃</a>
 	<%} %>
-		<div class="container">
-	<div class="row">
-		<div>
-			<div id="DB_navi24">
-				<div class="DB_wrap">
-					<h1 style="font-weight: bold; font-family: arial;">이집닥</h1>
-					<ul class="DB_main" style="color: black">
-						<li><a href="#">work</a></li>
-						<li><a href="#">company</a></li>
-						<li><a href="#">member</a></li>
-						<li><a href="#">orderRequest</a></li>
-						<li><a href="#">board</a></li>
-						<!-- <li><a href="#">스토어</a></li> -->
-					</ul>
-				</div>
-				<div class="DB_mask">
-					<div class="DB_move">
-						
-						<div class="DB_subSet">
+	<div class="container">
+		<div class="row">
+			<div>
+				<div id="DB_navi24">
+					<div class="DB_wrap">
+						<h1 style="font-weight: bold; font-family: arial;">이집닥</h1>
+						<ul class="DB_main" style="color: black">
+							<li><a href="#">work</a></li>
+							<li><a href="#">company</a></li>
+							<li><a href="#">member</a></li>
+							<li><a href="#">orderRequest</a></li>
+							<li><a href="#">board</a></li>
+							<!-- <li><a href="#">스토어</a></li> -->
+						</ul>
+					</div>
+					<div class="DB_mask">
+						<div class="DB_move">
 							
-							<ul>
-								<!-- work -->
-								<li><a href="#">리스트</a></li>
-								<li><a href="#">삽입</a></li>
-								<li><a href="#">수정</a></li>
-								<li><a href="#">삭제</a></li>
-								<li></li>
-							</ul>		
-							<ul><!-- company -->
-								<!--텍스트메뉴인 경우-->
-								<li><a href="company/companyList.jsp">리스트</a></li>
-								<li><a href="#">삽입</a></li>
-								<li><a href="#">수정</a></li>
-								<li><a href="board/table_form.jsp">삭제</a></li>
-								<li></li>
-							</ul>		
-							<ul>
-								<li><a href="member/memberList.jsp">리스트</a></li>
-								<li><a href="#">리스트</a></li>
-								<li><a href="#">삽입</a></li>
-								<li><a href="#">수정</a></li>
-								<li><a href="#">삭제</a></li>
-							</ul>		
-							<ul>
-								<!-- orderRequest -->
-								<li><a href="#">리스트</a></li>
-								<li><a href="#">삽입</a></li>
-								<li><a href="#">수정</a></li>
-								<li><a href="#">삭제</a></li>
-								<li></li>
-							</ul>
-							<ul>
-								<!-- board -->
-								<li><a href="#">리스트</a></li>
-								<li><a href="#">삽입</a></li>
-								<li><a href="#">수정</a></li>
-								<li><a href="#">삭제</a></li>
-								<li></li>
-							</ul>
-<!-- 							<ul>
-								<li><a href="#">집닥이 야심차게<br />
-							        <span style="margin: 1px"></span>준비한 특별한<br />
-								 <span style="margin: 1px"></span>상품을 만나보세요</a></li>
-								<li></li>
-							</ul> -->
+							<div class="DB_subSet">
+								
+								<ul>
+									<!-- work -->
+									<li><a href="#">리스트</a></li>
+									<li><a href="#">삽입</a></li>
+									<li><a href="#">수정</a></li>
+									<li><a href="#">삭제</a></li>
+									<li></li>
+								</ul>		
+								<ul><!-- company -->
+									<li><a href="company/companyList.jsp">리스트</a></li>
+									<li><a href="#">삽입</a></li>
+									<li><a href="#">수정</a></li>
+									<li><a href="board/table_form.jsp">삭제</a></li>
+									<li></li>
+								</ul>		
+								<ul>
+									<li><a href="member/memberList.jsp">리스트</a></li>
+									<li><a href="#">삽입</a></li>
+									<li><a href="#">수정</a></li>
+									<li><a href="#">삭제</a></li>
+								</ul>		
+								<ul>
+									<!-- orderRequest -->
+									<li><a href="#">리스트</a></li>
+									<li><a href="#">삽입</a></li>
+									<li><a href="#">수정</a></li>
+									<li><a href="#">삭제</a></li>
+									<li></li>
+								</ul>
+								<ul>
+									<!-- board -->
+									<li><a href="#">리스트</a></li>
+									<li><a href="#">삽입</a></li>
+									<li><a href="#">수정</a></li>
+									<li><a href="#">삭제</a></li>
+									<li></li>
+								</ul>
+	<!-- 							<ul>
+									<li><a href="#">집닥이 야심차게<br />
+								        <span style="margin: 1px"></span>준비한 특별한<br />
+									 <span style="margin: 1px"></span>상품을 만나보세요</a></li>
+									<li></li>
+								</ul> -->
+							</div>						
 						</div>
-						
 					</div>
 				</div>
-			</div>
-		</div>	
+			</div>	
+		</div>
 	</div>
-</div>	
 </div> <!-- <div id="navbar"> end-->
 
 <div id="navi">
