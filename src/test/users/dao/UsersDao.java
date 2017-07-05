@@ -68,7 +68,7 @@ public class UsersDao {
 		try {
 			conn = new DbcpBean().getConn();
 			String sql = "SELECT * FROM member"
-					+" WHERE id=? AND pwd=?";
+					+" WHERE memberId=? AND memberPwd=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, dto.getMemberId());
 			pstmt.setString(2, dto.getMemberPwd());
@@ -95,23 +95,23 @@ public class UsersDao {
 	}//isValid()
 	
 	// 회원 가입된 정보를 리턴해 주는 메소드
-	public UsersDto getData(String id){
+	public UsersDto getData(String memberId){
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		UsersDto dto=null;
 		try {
 			conn = new DbcpBean().getConn();
-			String sql = "SELECT pwd,email,regdate FROM member"
-					+" WHERE id=?";
+			String sql = "SELECT memberPwd,memberEmail,regdate FROM member"
+					+" WHERE memberId=?";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, id);
+			pstmt.setString(1, memberId);
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
 				dto=new UsersDto();
-				dto.setMemberId(id);
-				dto.setMemberPwd(rs.getString("pwd"));
-				dto.setMemberEmail(rs.getString("email"));
+				dto.setMemberId(memberId);
+				dto.setMemberPwd(rs.getString("memberPwd"));
+				dto.setMemberEmail(rs.getString("memberEmail"));
 				dto.setRegdate(rs.getString("regdate"));
 			}
 		} catch (SQLException se) {
@@ -131,15 +131,15 @@ public class UsersDao {
 	}//getData()
 	
 	//회원 정보를 삭제하는 메소드
-	public boolean delete(String id){
+	public boolean delete(String memberId){
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		int flag = 0;
 		try {
 			conn = new DbcpBean().getConn();
-			String sql = "DELETE FROM member WHERE id=?";
+			String sql = "DELETE FROM member WHERE memberId=?";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, id);
+			pstmt.setString(1, memberId);
 			flag = pstmt.executeUpdate();
 		} catch (SQLException se) {
 			se.printStackTrace();

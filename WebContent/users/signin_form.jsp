@@ -24,15 +24,15 @@
 			<form action="signin.jsp?url=<%=url %>" method="post">
 			<div class="form-group">
 			
-				<label for="id">아이디</label>
-				<input type="text" class="form-control" name="id" id="id" />
+				<label for="memberId">아이디</label>
+				<input type="text" class="form-control" name="memberId" id="memberId" />
 				<!-- form-group 안에 form-control 로 작성하면 레이블 밑에 input 요소가 자동으로 정렬되(원래는 옆으로 붙어) -->
 				<!-- <p class="help-block">반드시 입력하세요</p> -->
 			</div>
 			<div class="form-group">
 			
-				<label for="pwd">비밀번호</label>
-				<input type="password" class="form-control" name="pwd" id="pwd"/>
+				<label for="memberPwd">비밀번호</label>
+				<input type="password" class="form-control" name="memberPwd" id="memberPwd"/>
 				
 			</div>
 	
