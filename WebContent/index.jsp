@@ -103,6 +103,7 @@
 							<ul>
 								<!-- work -->
 								<li><a href="#">리스트</a></li>
+								<li><a href="#">삽입</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
 								<li></li>
@@ -110,6 +111,7 @@
 							<ul><!-- company -->
 								<!--텍스트메뉴인 경우-->
 								<li><a href="company/companyList.jsp">리스트</a></li>
+								<li><a href="#">삽입</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="board/table_form.jsp">삭제</a></li>
 								<li></li>
@@ -117,12 +119,14 @@
 							<ul>
 								<!-- member -->
 								<li><a href="#">리스트</a></li>
+								<li><a href="#">삽입</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
 							</ul>		
 							<ul>
 								<!-- orderRequest -->
 								<li><a href="#">리스트</a></li>
+								<li><a href="#">삽입</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
 								<li></li>
@@ -130,6 +134,7 @@
 							<ul>
 								<!-- board -->
 								<li><a href="#">리스트</a></li>
+								<li><a href="#">삽입</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
 								<li></li>
