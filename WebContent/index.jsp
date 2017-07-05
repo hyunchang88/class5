@@ -111,7 +111,7 @@
 								<!--텍스트메뉴인 경우-->
 								<li><a href="#">궁금해요</a></li>
 								<li><a href="#">내방어때요</a></li>
-								<li><a href="#">집닥후기</a></li>
+								<li><a href="table form.jsp">집닥후기</a></li>
 								<li></li>
 							</ul>		
 							<ul>
