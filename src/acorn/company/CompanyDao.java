@@ -54,7 +54,7 @@ public class CompanyDao {
 		}
 	}//insert
 	//회사 정보를 불러오는 메소드
-	public CompanyDto getData(String companyNo){
+	public CompanyDto getData(int companyNo){
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -64,7 +64,7 @@ public class CompanyDao {
 			String sql = "select companyName, companyCeoName, companyCeoPhone,"
 					+ " workArea, workNo from company where companyNo=?";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, companyNo);
+			pstmt.setInt(1, companyNo);
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
 				dto=new CompanyDto();
