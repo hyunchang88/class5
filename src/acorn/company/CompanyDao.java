@@ -119,7 +119,8 @@ public class CompanyDao {
 		
 	}//delete()
 	
-	//회사 정보를 수정하는 메소드
+	//회사 정보를 수정하는 메소드-곧 업데이트 작업할겁니다.
+
 	
 	//회사목록을 리턴해주는 메소드
 	public List<CompanyDto> getList(){
