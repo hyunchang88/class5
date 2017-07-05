@@ -12,7 +12,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <!--<meta name="viewport" content="width=1000px" />-->
-<title>index.html</title>
+<title>writing.html</title>
 <link rel="stylesheet" href="resource/css/bootstrap.css" />
 <link rel="stylesheet" href="resource/css/font-awesome.css"/>
 <link rel="stylesheet" href="resource/js/DB_navi24.css" type="text/css"></link>
@@ -52,10 +52,7 @@
 		
 	
 		/* 좌우 경계선 이용하기  */
-		#content{
-			border-left: 200px solid yellow;
-			border-right: 200px solid pink;
-	       }
+
 		/* 로그인 회원가입 고객센터*/
 	       .log1 li{
 		      list-style-type: none;
@@ -229,10 +226,11 @@
 					<input type="file" id="File"> 
 				</div> 
 				
-				<div class="center-block" style='width:200px'> 
-				<input type="submit" class="btn" value="저장하기">
-				<input type="reset"  class="btn" value="다시쓰기"> 
-				<input type="button" class="btn" value="Back" onclick="history.back(1)"></div> 
+				<div class="center-block" style='width:300px; float:left;'> 
+					<input type="submit" class="btn" value="저장하기">
+					<input type="reset"  class="btn" value="다시쓰기"> 
+					<input type="button" class="btn" value="뒤로가기" onclick="history.back(1)">
+				</div> 
 			
 			</div> 
 		</div> <!--panel end--> 
