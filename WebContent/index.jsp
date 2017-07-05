@@ -115,7 +115,7 @@
 								<li></li>
 							</ul>		
 							<ul>
-								<li><a href="#">리스트</a></li>
+								<li><a href="member/memberList.jsp">리스트</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
 							</ul>		
