@@ -25,7 +25,8 @@ CREATE TABLE member(
    memberLevel CHAR(1) NOT NULL,
    memberEmail VARCHAR2(50) NOT NULL,
    memberPhone VARCHAR2(20) NOT NULL,
-   workArea VARCHAR2(20) NOT NULL
+   workArea VARCHAR2(20) NOT NULL,
+   regdate DATE
 );
 
 CREATE TABLE orderRequest(
@@ -57,4 +58,5 @@ CREATE TABLE board(
 );
 
 CREATE SEQUENCE boardNo_SEQ;
+
 

@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+import acorn.util.DbcpBean;
 import test.users.dto.UsersDto;
-import test.util.DbcpBean;
 
 public class UsersDao {
 	private static UsersDao dao;
@@ -26,13 +26,15 @@ public class UsersDao {
 		int flag = 0;
 		try {
 			conn = new DbcpBean().getConn();
-			String sql = "INSERT INTO users "
-					+"(id, pwd, email, regdate)"
-					+" VALUES(?, ?, ?, SYSDATE)";
+			String sql = "INSERT INTO member "
+					+"(memberId, memberPwd, memberName, memberPhone, memberEmail, regdate)"
+					+" VALUES(?, ?, ?, ?, ?, SYSDATE)";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, dto.getId());
 			pstmt.setString(2, dto.getPwd());
-			pstmt.setString(3, dto.getEmail());
+			pstmt.setString(3, dto.getName());
+			pstmt.setString(4, dto.getPhone());
+			pstmt.setString(5, dto.getEmail());
 			flag = pstmt.executeUpdate();
 		} catch (SQLException se) {
 			se.printStackTrace();
