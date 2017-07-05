@@ -164,24 +164,27 @@ public class CompanyDao {
 		//목록 리턴
 		return list;
 	}
-	public List<CompanyDto> getSearchList(String workArea){
+	public List<CompanyDto> getSearchList(String workArea, String inputvalue){
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		List<CompanyDto> list=new ArrayList<CompanyDto>();
 		try {
 			conn = new DbcpBean().getConn();
-			String sql = "select companyname, companyceophone from company where workarea like '?'";
+			String sql = "select companyname, companyceophone,companyno from company where workarea like '%' || ? || '%' and companyname like '%' || ? || '%'";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, workArea);
+			pstmt.setString(2, inputvalue);
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
 				String companyname=rs.getString("companyName");
 				String companyceophone=rs.getString("companyCeoPhone");
+				int companyno=rs.getInt("companyno");
 				//글정보를 dto에 담기
 				CompanyDto dto=new CompanyDto();
 				dto.setCompanyName(companyname);
 				dto.setCompanyCeoPhone(companyceophone);
+				dto.setCompanyNo(companyno);
 				//list에 저장한다.
 				list.add(dto);				
 			}
