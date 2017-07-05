@@ -1,52 +1,77 @@
 package test.users.dto;
 
 public class UsersDto {
-	private String id;
-	private String pwd;
-	private String name;
-	private String phone;
-	private String email;
+	private String memberId;
+	private String memberPwd;
+	private String memberName;
+	private String companyNo;
+	private String memberLevel;
+	private String memberEmail;
+	private String memberPhone;
+	private String workArea;
 	private String regdate;
 	// 디폴트 생성자
 	public UsersDto(){}
-	public UsersDto(String id, String pwd, String name, String phone, String email, String regdate) {
+	public UsersDto(String memberId, String memberPwd, String memberName, String companyNo, String memberLevel,
+			String memberEmail, String memberPhone, String workArea, String regdate) {
 		super();
-		this.id = id;
-		this.pwd = pwd;
-		this.name = name;
-		this.phone = phone;
-		this.email = email;
+		this.memberId = memberId;
+		this.memberPwd = memberPwd;
+		this.memberName = memberName;
+		this.companyNo = companyNo;
+		this.memberLevel = memberLevel;
+		this.memberEmail = memberEmail;
+		this.memberPhone = memberPhone;
+		this.workArea = workArea;
 		this.regdate = regdate;
 	}
-	public String getId() {
-		return id;
+	public String getMemberId() {
+		return memberId;
 	}
-	public void setId(String id) {
-		this.id = id;
+	public void setMemberId(String memberId) {
+		this.memberId = memberId;
 	}
-	public String getPwd() {
-		return pwd;
+	public String getMemberPwd() {
+		return memberPwd;
 	}
-	public void setPwd(String pwd) {
-		this.pwd = pwd;
+	public void setMemberPwd(String memberPwd) {
+		this.memberPwd = memberPwd;
 	}
-	public String getName() {
-		return name;
+	public String getMemberName() {
+		return memberName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
 	}
-	public String getPhone() {
-		return phone;
+	public String getCompanyNo() {
+		return companyNo;
 	}
-	public void setPhone(String phone) {
-		this.phone = phone;
+	public void setCompanyNo(String companyNo) {
+		this.companyNo = companyNo;
 	}
-	public String getEmail() {
-		return email;
+	public String getMemberLevel() {
+		return memberLevel;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setMemberLevel(String memberLevel) {
+		this.memberLevel = memberLevel;
+	}
+	public String getMemberEmail() {
+		return memberEmail;
+	}
+	public void setMemberEmail(String memberEmail) {
+		this.memberEmail = memberEmail;
+	}
+	public String getMemberPhone() {
+		return memberPhone;
+	}
+	public void setMemberPhone(String memberPhone) {
+		this.memberPhone = memberPhone;
+	}
+	public String getWorkArea() {
+		return workArea;
+	}
+	public void setWorkArea(String workArea) {
+		this.workArea = workArea;
 	}
 	public String getRegdate() {
 		return regdate;
@@ -54,5 +79,6 @@ public class UsersDto {
 	public void setRegdate(String regdate) {
 		this.regdate = regdate;
 	}
-
+	
+	
 }

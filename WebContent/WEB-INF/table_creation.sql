@@ -22,7 +22,7 @@ CREATE TABLE member(
    memberPwd VARCHAR2(50) NOT NULL,
    memberName VARCHAR2(50) NOT NULL,
    companyNo NUMBER(7) CONSTRAINT member_companyNo_fk REFERENCES company(companyNo),
-   memberLevel CHAR(1) NOT NULL,
+   memberLevel CHAR(2) NOT NULL,
    memberEmail VARCHAR2(50) NOT NULL,
    memberPhone VARCHAR2(20) NOT NULL,
    workArea VARCHAR2(20) NOT NULL,

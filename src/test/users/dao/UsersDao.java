@@ -27,14 +27,17 @@ public class UsersDao {
 		try {
 			conn = new DbcpBean().getConn();
 			String sql = "INSERT INTO member "
-					+"(memberId, memberPwd, memberName, memberPhone, memberEmail, regdate)"
-					+" VALUES(?, ?, ?, ?, ?, SYSDATE)";
+					+"(memberId, memberPwd, memberName, companyNo, memberLevel, memberEmail, memberPhone, workArea, regdate)"
+					+" VALUES(?, ?, ?, ?, ?, ?, ?, ?, SYSDATE)";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, dto.getId());
-			pstmt.setString(2, dto.getPwd());
-			pstmt.setString(3, dto.getName());
-			pstmt.setString(4, dto.getPhone());
-			pstmt.setString(5, dto.getEmail());
+			pstmt.setString(1, dto.getMemberId());
+			pstmt.setString(2, dto.getMemberPwd());
+			pstmt.setString(3, dto.getMemberName());
+			pstmt.setString(4, dto.getCompanyNo());
+			pstmt.setString(5, dto.getMemberLevel());
+			pstmt.setString(6, dto.getMemberEmail());
+			pstmt.setString(7, dto.getMemberPhone());
+			pstmt.setString(8, dto.getWorkArea());
 			flag = pstmt.executeUpdate();
 		} catch (SQLException se) {
 			se.printStackTrace();
@@ -64,11 +67,11 @@ public class UsersDao {
 		boolean isValid=false;
 		try {
 			conn = new DbcpBean().getConn();
-			String sql = "SELECT * FROM users"
+			String sql = "SELECT * FROM member"
 					+" WHERE id=? AND pwd=?";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, dto.getId());
-			pstmt.setString(2, dto.getPwd());
+			pstmt.setString(1, dto.getMemberId());
+			pstmt.setString(2, dto.getMemberPwd());
 			// SELECT 해서
 			rs = pstmt.executeQuery();
 			while (rs.next()) {//row 가 하나라도 있으면
@@ -87,7 +90,7 @@ public class UsersDao {
 			} catch (Exception e) {
 			}
 		}
-		// 아이디 비밀번호가 유요한 정보인지 여부를 리턴해 준다.
+		// 아이디 비밀번호가 유효한 정보인지 여부를 리턴해 준다.
 		return isValid;
 	}//isValid()
 	
@@ -99,16 +102,16 @@ public class UsersDao {
 		UsersDto dto=null;
 		try {
 			conn = new DbcpBean().getConn();
-			String sql = "SELECT pwd,email,regdate FROM users"
+			String sql = "SELECT pwd,email,regdate FROM member"
 					+" WHERE id=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, id);
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
 				dto=new UsersDto();
-				dto.setId(id);
-				dto.setPwd(rs.getString("pwd"));
-				dto.setEmail(rs.getString("email"));
+				dto.setMemberId(id);
+				dto.setMemberPwd(rs.getString("pwd"));
+				dto.setMemberEmail(rs.getString("email"));
 				dto.setRegdate(rs.getString("regdate"));
 			}
 		} catch (SQLException se) {
@@ -134,7 +137,7 @@ public class UsersDao {
 		int flag = 0;
 		try {
 			conn = new DbcpBean().getConn();
-			String sql = "DELETE FROM users WHERE id=?";
+			String sql = "DELETE FROM member WHERE id=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, id);
 			flag = pstmt.executeUpdate();
@@ -164,12 +167,12 @@ public class UsersDao {
 		int flag = 0;
 		try {
 			conn = new DbcpBean().getConn();
-			String sql = "UPDATE users SET pwd=?,email=? "
+			String sql = "UPDATE member SET pwd=?,email=? "
 					+"WHERE id=?";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, dto.getPwd());
-			pstmt.setString(2, dto.getEmail());
-			pstmt.setString(3, dto.getId());
+			pstmt.setString(1, dto.getMemberPwd());
+			pstmt.setString(2, dto.getMemberEmail());
+			pstmt.setString(3, dto.getMemberId());
 			flag = pstmt.executeUpdate();
 		} catch (SQLException se) {
 			se.printStackTrace();

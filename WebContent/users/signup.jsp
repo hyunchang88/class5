@@ -16,8 +16,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>/users/signup.jsp</title>
+<!-- bootstrap.css 로딩하기 -->
+<link rel="stylesheet" href="../resource/css/bootstrap.css" />
 </head>
 <body>
+<script src="../resource/js/jquery-3.2.0.js"></script>
 <%if(isSuccess){ %>
 	<script>
 		alert("가입 성공");

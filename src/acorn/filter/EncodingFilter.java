@@ -40,7 +40,6 @@ public class EncodingFilter implements Filter{
 	//필터가 최초 동작될때 호출되는 메소드 
 	@Override
 	public void init(FilterConfig config) throws ServletException {
-		// TODO Auto-generated method stub
 		System.out.println("init()");
 		/*  아래와 같은 web.xml 문서의 내용중에서 utf-8 문자열
 		 *  읽어내기 

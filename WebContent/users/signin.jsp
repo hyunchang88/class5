@@ -18,15 +18,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>users/signin.jsp</title>
+<!-- bootstrap.css 로딩하기 -->
+<link rel="stylesheet" href="../resource/css/bootstrap.css" />
 </head>
 <body>
 <%if(isValid){ 
-	session.setAttribute("id", dto.getId());%>
-	<p> <strong><%=dto.getId() %></strong> 님 로그인 되었습니다.</p>
+	session.setAttribute("id", dto.getMemberId());%>
+	<p> <strong><%=dto.getMemberId() %></strong> 님 로그인 되었습니다.</p>
 	<a href="<%=url%>">확인</a>
 <%}else{ %>
 	<p> 아이디 혹은 비밀번호가 틀려요.</p>
 	<a href="signin_form.jsp?url=<%=url%>">로그인 페이지로 가기</a>
 <%} %>
+
+<script src="../resource/js/jquery-3.2.0.js"></script>
+
 </body>
 </html>
