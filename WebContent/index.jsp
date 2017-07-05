@@ -107,9 +107,9 @@
 								<li><a href="#">삭제</a></li>
 								<li></li>
 							</ul>		
-							<ul>
+							<ul><!-- company -->
 								<!--텍스트메뉴인 경우-->
-								<li><a href="#">리스트</a></li>
+								<li><a href="company/companyList.jsp">리스트</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="board/table_form.jsp">삭제</a></li>
 								<li></li>
