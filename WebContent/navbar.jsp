@@ -51,16 +51,16 @@
 								</ul>		
 								<ul><!-- company -->
 									<li><a href="company/companyList.jsp">리스트</a></li>
-									<li><a href="#">삽입</a></li>
-									<li><a href="#">수정</a></li>
-									<li><a href="board/table_form.jsp">삭제</a></li>
+									<li><a href="company/companyInsert.jsp">삽입</a></li>
+									<li><a href="company/companyUpdate.jsp">수정</a></li>
+									<li><a href="company/companyDelete.jsp">삭제</a></li>
 									<li></li>
 								</ul>		
 								<ul>
 									<li><a href="member/memberList.jsp">리스트</a></li>
-									<li><a href="#">삽입</a></li>
-									<li><a href="#">수정</a></li>
-									<li><a href="#">삭제</a></li>
+									<li><a href="member/memberInsert.jsp">삽입</a></li>
+									<li><a href="member/memberUpdate.jsp">수정</a></li>
+									<li><a href="member/memberDelete.jsp">삭제</a></li>
 								</ul>		
 								<ul>
 									<!-- orderRequest -->

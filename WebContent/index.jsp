@@ -98,7 +98,7 @@
 
 
 <div class="container-fluid">
-	<div style="height:500px; background:url('resource/images/main.jpg') no-repeat center;"></div>
+	<div style="width:100%;height:500px; background:url('resource/images/main.jpg') no-repeat center;"></div>
 </div>
 </body>
 </html>
