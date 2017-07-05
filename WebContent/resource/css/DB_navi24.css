@@ -12,9 +12,9 @@
 #DB_navi24 .DB_wrap .DB_main li.DB_select{}
 
 #DB_navi24 .DB_mask{position:absolute;width:100%;min-width:1000px;height:200px/*����޴���ü����*/;overflow:hidden;display:none;}
-#DB_navi24 .DB_mask .DB_move{position:relative;width:100%;background:url('img/bg.png')  repeat-x center bottom;height:160px;top:-162px/*���� �޴������*/;border-bottom:2px solid #59afe4; background-color:#FAD79B;}
-#DB_navi24 .DB_mask .DB_move .DB_subSet{position:relative;width:1000px;margin:0 auto;/*��ǥ��=>left:50%;margin-left:-500px*/;padding-top:20px; background-color:#FAD79B;}
-#DB_navi24 .DB_mask .DB_move .DB_subSet ul{float:left;width:120px; background-color:#FAD79B;}
+#DB_navi24 .DB_mask .DB_move{position:relative;width:100%;background:url('img/bg.png')  repeat-x center bottom;height:160px;top:-162px/*���� �޴������*/;border-bottom:2px solid #59afe4;}
+#DB_navi24 .DB_mask .DB_move .DB_subSet{position:relative;width:1000px;margin:0 auto;/*��ǥ��=>left:50%;margin-left:-500px*/;padding-top:20px;}
+#DB_navi24 .DB_mask .DB_move .DB_subSet ul{float:left;width:120px;}
 #DB_navi24 .DB_mask .DB_move .DB_subSet ul:first-child{margin-left:250px}/*��ǥ��=> ù��° li�� Ŭ������ ����*/
 #DB_navi24 .DB_mask .DB_move .DB_subSet ul li{height:22px;border-left:1px solid #eeeeee;text-indent:5px;}
 #DB_navi24 .DB_mask .DB_move .DB_subSet ul li a{display:block;width:90%;padding:2px;color:black;}

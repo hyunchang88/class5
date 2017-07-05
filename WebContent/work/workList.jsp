@@ -13,17 +13,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <!--<meta name="viewport" content="width=1000px" />-->
 <title>index.html</title>
-<link rel="stylesheet" href="../resource/css/bootstrap.css" />
-
-<link rel="stylesheet" href="../resource/css/font-awesome.css"/>
-
-<link rel="stylesheet" href="../resource/js/DB_navi24.css" type="text/css">
 
 <link rel="stylesheet" href="../resource/css/jquery.bxslider.css" rel="stylesheet" />
-
-<script type="text/javascript" src="../resource/js/jquery-3.2.0.js"></script><!--jquery라이브러리-->
-
-<script type="text/javascript" src="../resource/js/jquery.DB_naviFullWideMove.min.js"></script>
 
 <script type="text/javascript" src="../resource/js/jquery.bxslider.min.js"></script>
 
@@ -81,80 +72,14 @@
    </style>
 </head>
 <body>
+<jsp:include page="../navbar.jsp" ></jsp:include>
 
-<h3>인덱스 페이지 입니다.</h3>
-<div id="navbar">
    <!-- <h3>navbar 위치할 공간</h3> -->
    <%if( id != null ){ %>
       <p> <strong><a href="users/private/info.jsp"><%=id %></a></strong> 회원님 로그인 중....</p>
       <a href="users/signout.jsp">로그아웃</a>
    <%} %>
-      <div class="container">
-   <div class="row">
-      <div>
-         <div id="DB_navi24">
-            <div class="DB_wrap">
-               <h1 style="font-weight: bold; font-family: arial;">이집닥</h1>
-               <ul class="DB_main" style="color: black">
-                  <li><a href="#">work</a></li>
-                  <li><a href="#">company</a></li>
-                  <li><a href="#">member</a></li>
-                  <li><a href="#">orderRequest</a></li>
-                  <li><a href="#">board</a></li>
-                  <!-- <li><a href="#">스토어</a></li> -->
-               </ul>
-            </div>
-            <div class="DB_mask">
-               <div class="DB_move">
-                  
-                  <div class="DB_subSet">
-                     
-                     <ul>
-                        <!--이미지메뉴인 경우-->
-                        <li><a href="#">리스트</a></li>
-                        <li><a href="#">수정</a></li>
-                        <li><a href="#">삭제</a></li>
-                        <li></li>
-                     </ul>      
-                     <ul>
-                        <!--텍스트메뉴인 경우-->
-                        <li><a href="#">리스트</a></li>
-                        <li><a href="#">수정</a></li>
-                        <li><a href="board/table_form.jsp">삭제</a></li>
-                        <li></li>
-                     </ul>      
-                     <ul>
-                        <li><a href="#">리스트</a></li>
-                        <li><a href="#">수정</a></li>
-                        <li><a href="#">삭제</a></li>
-                     </ul>      
-                     <ul>
-                        <li><a href="#">리스트</a></li>
-                        <li><a href="#">수정</a></li>
-                        <li><a href="#">삭제</a></li>
-                        <li></li>
-                     </ul>
-                     <ul>
-                        <li><a href="#">리스트</a></li>
-                        <li><a href="#">수정</a></li>
-                        <li><a href="#">삭제</a></li>
-                        <li></li>
-                     </ul>
-<!--                      <ul>
-                        <li><a href="#">집닥이 야심차게<br />
-                             <span style="margin: 1px"></span>준비한 특별한<br />
-                         <span style="margin: 1px"></span>상품을 만나보세요</a></li>
-                        <li></li>
-                     </ul> -->
-                  </div>
-                  
-               </div>
-            </div>
-         </div>
-      </div>   
-   </div>
-</div>   
-</div> <!-- <div id="navbar"> end-->
+
 
 <div id="navi">
    <ul>
@@ -179,20 +104,7 @@
    </div>
 </div> 
 
-<script type="text/javascript">
-      $('#DB_navi24').DB_naviFullWideMove({
-         key:'c37080',                 //라이센스키
-         pageNum:3,           //메인메뉴 페이지인식(1~)
-         subNum:1,            //서브메뉴 페이지인식(1~)
-         subState:false,         //메뉴활성시 서브메뉴의 오픈유무(true,false)
-         motionSpeed:300,        //모션속도(밀리초)
-         delayTime:100             //메뉴아웃시 되돌아가는 딜레이시간(밀리초)
-      });
-      
-      $(document).ready(function(){
-           $('.bxslider').bxSlider();
-      });
-</script>
+
 
 <div class="container">
    <div class="row">

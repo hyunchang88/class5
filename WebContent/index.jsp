@@ -24,16 +24,6 @@
 			/* 상단 fixed 된 요소에 가려진 내용을 볼수 있도록 */
 			padding-top: 100px;
 		}
-		#navbar{
-			background-color: #cecece;
-			color: #fff;
-			/* window 기준으로 고정 위치 */
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			z-index: 100;
-		}
 		#navi{
 			position: absolute;
 			left: 0;
@@ -74,83 +64,13 @@
 <body>
 
 <h3>인덱스 페이지 입니다.</h3>
-<div id="navbar">
-	<!-- <h3>navbar 위치할 공간</h3> -->
+<jsp:include page="navbar.jsp" ></jsp:include>
+<!-- <h3>navbar 위치할 공간</h3> -->
 	<%if( id != null ){ %>
 		<p> <strong><a href="users/private/info.jsp"><%=id %></a></strong> 회원님 로그인 중....</p>
 		<a href="users/signout.jsp">로그아웃</a>
 	<%} %>
-	<div class="container">
-		<div class="row">
-			<div>
-				<div id="DB_navi24">
-					<div class="DB_wrap">
-						<h1 style="font-weight: bold; font-family: arial;">이집닥</h1>
-						<ul class="DB_main" style="color: black">
-							<li><a href="#">work</a></li>
-							<li><a href="#">company</a></li>
-							<li><a href="#">member</a></li>
-							<li><a href="#">orderRequest</a></li>
-							<li><a href="#">board</a></li>
-							<!-- <li><a href="#">스토어</a></li> -->
-						</ul>
-					</div>
-					<div class="DB_mask">
-						<div class="DB_move">
-							
-							<div class="DB_subSet">
-								
-								<ul>
-									<!-- work -->
-									<li><a href="work/workList.jsp">리스트</a></li>
-									<li><a href="work/workInsert.jsp">삽입</a></li>
-									<li><a href="work/workUpdate.jsp">수정</a></li>
-									<li><a href="work/workDelete.jsp">삭제</a></li>
-									<li></li>
-								</ul>		
-								<ul><!-- company -->
-									<li><a href="company/companyList.jsp">리스트</a></li>
-									<li><a href="#">삽입</a></li>
-									<li><a href="#">수정</a></li>
-									<li><a href="board/table_form.jsp">삭제</a></li>
-									<li></li>
-								</ul>		
-								<ul>
-									<li><a href="member/memberList.jsp">리스트</a></li>
-									<li><a href="#">삽입</a></li>
-									<li><a href="#">수정</a></li>
-									<li><a href="#">삭제</a></li>
-								</ul>		
-								<ul>
-									<!-- orderRequest -->
-									<li><a href="#">리스트</a></li>
-									<li><a href="#">삽입</a></li>
-									<li><a href="#">수정</a></li>
-									<li><a href="#">삭제</a></li>
-									<li></li>
-								</ul>
-								<ul>
-									<!-- board -->
-									<li><a href="#">리스트</a></li>
-									<li><a href="#">삽입</a></li>
-									<li><a href="#">수정</a></li>
-									<li><a href="#">삭제</a></li>
-									<li></li>
-								</ul>
-	<!-- 							<ul>
-									<li><a href="#">집닥이 야심차게<br />
-								        <span style="margin: 1px"></span>준비한 특별한<br />
-									 <span style="margin: 1px"></span>상품을 만나보세요</a></li>
-									<li></li>
-								</ul> -->
-							</div>						
-						</div>
-					</div>
-				</div>
-			</div>	
-		</div>
-	</div>
-</div> <!-- <div id="navbar"> end-->
+
 
 <div id="navi">
 	<ul>
@@ -175,16 +95,7 @@
    </div>
 </div> 
 
-<script type="text/javascript">
-		$('#DB_navi24').DB_naviFullWideMove({
-			key:'c37080',                 //라이센스키
-			pageNum:3,           //메인메뉴 페이지인식(1~)
-			subNum:1,            //서브메뉴 페이지인식(1~)
-			subState:false,         //메뉴활성시 서브메뉴의 오픈유무(true,false)
-			motionSpeed:300,        //모션속도(밀리초)
-			delayTime:100             //메뉴아웃시 되돌아가는 딜레이시간(밀리초)
-		});
-</script>
+
 
 <div class="container-fluid">
 	<div style="height:500px; background:url('resource/images/main.jpg') no-repeat center;"></div>
