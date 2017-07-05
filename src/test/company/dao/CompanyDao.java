@@ -1,14 +1,14 @@
 package test.company.dao;
 
+import test.company.dto.CompanyDto;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
 import acorn.util.DbcpBean;
-import test.company.dto.CompanyDto;
 
 public class CompanyDao {
 	private static CompanyDao dao;
@@ -120,63 +120,33 @@ public class CompanyDao {
 	}//delete()
 	
 	//회사 정보를 수정하는 메소드
-	public boolean update(CompanyDto dto){
-	Connection conn = null;
-	PreparedStatement pstmt = null;
-	int flag = 0;
-	try {
-		conn = new DbcpBean().getConn();
-		String sql = "update company set ";
-		pstmt = conn.prepareStatement(sql);
-
-		flag = pstmt.executeUpdate();
-
-	} catch (SQLException se) {
-		se.printStackTrace();
-	} finally {
-		try {
-			if (pstmt != null)
-				pstmt.close();
-			if (conn != null)
-				conn.close();
-		} catch (Exception e) {
-		}
-	}
-	if (flag > 0) {
-		return true;
-	} else {
-		return false;
-	}	
-	}	
 	
 	//회사목록을 리턴해주는 메소드
 	public List<CompanyDto> getList(){
+		System.out.println("어레이객체 1");
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		List<CompanyDto> list=new ArrayList<CompanyDto>();
+		System.out.println("어레이객체 2");
 		try {
 			conn = new DbcpBean().getConn();
-			String sql = "select companyNo,companyName,companyCeoName,companyCeoPhone,workArea,workNo from company order by companyNo";
+			String sql = "select companyNo,companyName from company order by companyNo";
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
-			while (rs.next()) {
+			System.out.println("어레이객체 3");
+			while(rs.next()){
+				System.out.println("어레이객체 4.1");
 				int companyno = rs.getInt("companyNo");
 				String companyname = rs.getString("companyName");
-				String companyceoname = rs.getString("companyCeoName");
-				String companyceophone = rs.getString("companyCeoPhone");
-				String workarea = rs.getString("workArea");
-				int workno = rs.getInt("workNo");
 				//글정보를 dto에 담아서
+				System.out.println("어레이객체 4.2");
 				CompanyDto dto=new CompanyDto();
 				dto.setCompanyNo(companyno);
 				dto.setCompanyName(companyname);
-				dto.setCompanyCeoname(companyceoname);
-				dto.setCompanyCeoPhone(companyceophone);
-				dto.setWorkArea(workarea);
-				dto.setWorkNo(workno);
 				//list어레이에 객체를 저장한다.
-				list.add(dto);			
+				System.out.println("어레이객체 4.3");
+				list.add(dto);
 			}
 		} catch (SQLException se) {
 			se.printStackTrace();

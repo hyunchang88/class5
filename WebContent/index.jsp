@@ -101,32 +101,40 @@
 						<div class="DB_subSet">
 							
 							<ul>
-								<!--이미지메뉴인 경우-->
+								<!-- work -->
 								<li><a href="#">리스트</a></li>
+								<li><a href="#">삽입</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
 								<li></li>
 							</ul>		
-							<ul>
+							<ul><!-- company -->
 								<!--텍스트메뉴인 경우-->
-								<li><a href="#">리스트</a></li>
+								<li><a href="company/companyList.jsp">리스트</a></li>
+								<li><a href="#">삽입</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="board/table_form.jsp">삭제</a></li>
 								<li></li>
 							</ul>		
 							<ul>
 								<li><a href="member/memberList.jsp">리스트</a></li>
+								<li><a href="#">리스트</a></li>
+								<li><a href="#">삽입</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
 							</ul>		
 							<ul>
+								<!-- orderRequest -->
 								<li><a href="#">리스트</a></li>
+								<li><a href="#">삽입</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
 								<li></li>
 							</ul>
 							<ul>
+								<!-- board -->
 								<li><a href="#">리스트</a></li>
+								<li><a href="#">삽입</a></li>
 								<li><a href="#">수정</a></li>
 								<li><a href="#">삭제</a></li>
 								<li></li>

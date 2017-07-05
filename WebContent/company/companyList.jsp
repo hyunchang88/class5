@@ -1,13 +1,14 @@
 <%@page import="test.company.dto.CompanyDto"%>
-<%@page import="java.util.List"%>
 <%@page import="test.company.dao.CompanyDao"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
 //BoardDao 객체의 참조값 얻어오기
 CompanyDao dao = CompanyDao.getInstance();
 //회원목록 얻어오기
-List<CompanyDto> comlist = dao.getList();
+/* List<CompanyDto> comlist = dao.getList(); */
+List<CompanyDto> list = dao.getList();
 %>
 <script src="../resource/js/holder.js"></script>
 <div class="container">
@@ -27,14 +28,14 @@ List<CompanyDto> comlist = dao.getList();
 					<h4 class="margin-bottom-0">베스트 파트너스</h4>
 					<ul class="list_tile partners">
 						<!-- list item -->
-						<%for(CompanyDto tmp:comlist){ %>
+						<%for(int i=0; i<3; i++){ %>
 							<li>
 								<a href="#">
 									<div>
 										<img src="holder.js/300x200" alt="" />
 									</div>
 									<div>
-										<%=tmp.getCompanyName() %>
+										<%=list.get(i).getCompanyName() %>
 									</div>									
 								</a>
 							</li>
@@ -49,7 +50,7 @@ List<CompanyDto> comlist = dao.getList();
 					<form id="searchForm" action="/zws/partner/searchPartner.do" method="post">
 					<input id="currentPage" name="currentPage" type="hidden" value="1">
 					<input id="orderBy" name="orderBy" type="hidden" value="">
-					<select id="region1" name="region1" class="sel_01 form-control select"><option value="">--시/도--</option><option value="서울">서울</option><option value="경기">경기</option><option value="부산">부산</option><option value="대구">대구</option><option value="인천">인천</option><option value="광주">광주</option><option value="대전">대전</option><option value="울산">울산</option><option value="강원">강원</option><option value="충북">충북</option><option value="충남">충남</option><option value="전북">전북</option><option value="전남">전남</option><option value="경북">경북</option><option value="경남">경남</option><option value="제주특별자치도">제주특별자치도</option><option value="세종특별자치시">세종특별자치시</option></select>
+					<select id="region1" name="region1" class="sel_01 form-control select"><option value="">--시/도--</option><option value="서울" name="서울">서울</option><option value="경기" name="경기">경기</option><option value="부산" name="부산">부산</option><option value="대구" name="대구">대구</option><option value="인천" name="인천">인천</option><option value="광주" name="광주">광주</option><option value="대전" name="대전">대전</option><option value="울산" name="울산">울산</option><option value="강원" name="강원">강원</option><option value="충북" name="충북">충북</option><option value="충남" name="충남">충남</option><option value="전북" name="전북">전북</option><option value="전남" name="전남">전남</option><option value="경북" name="경북">경북</option><option value="경남" name="경남">경남</option><option value="제주특별자치도" name="제주도">제주도</option><option value="세종특별자치시" name="세종특별자치시">세종특별자치시</option></select>
 					<input id="searchValue" name="searchValue" class="form-control search_big_input form-second" type="text" value="">
 					<button class="btn" type="submit" onclick="goSearch();">검색</button>
 					</form>
