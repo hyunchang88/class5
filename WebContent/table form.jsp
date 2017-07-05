@@ -12,7 +12,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <!--<meta name="viewport" content="width=1000px" />-->
-<title>index.html</title>
+<title>table.html</title>
 <link rel="stylesheet" href="resource/css/bootstrap.css" />
 <link rel="stylesheet" href="resource/css/font-awesome.css"/>
 <link rel="stylesheet" href="resource/js/DB_navi24.css" type="text/css"></link>
@@ -203,8 +203,8 @@
 	</div>	
 	<div class="row">
 		<div class="col-xs-offset-5">
-			<button class="btn-lg btn-warning " style="padding:30px 100px;"><i class="fa fa-pencil"></i>글쓰기</button>
-		</div>
+			<a class="btn-lg btn-warning" href="writing.jsp" style="padding:10px 100px;"><i class="fa fa-pencil"></i>글쓰기</a>
+		</div>	
 	</div>
 </div>
 
