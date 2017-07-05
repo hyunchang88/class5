@@ -87,12 +87,12 @@
 				<div class="DB_wrap">
 					<h1 style="font-weight: bold; font-family: arial;">이집닥</h1>
 					<ul class="DB_main" style="color: black">
-						<li><a href="#">갤러리</a></li>
-						<li><a href="#">커뮤니티</a></li>
-						<li><a href="#">매거진</a></li>
-						<li><a href="#">파트너스</a></li>
-						<li><a href="#">견적상담</a></li>
-						<li><a href="#">스토어</a></li>
+						<li><a href="#">work</a></li>
+						<li><a href="#">company</a></li>
+						<li><a href="#">member</a></li>
+						<li><a href="#">orderRequest</a></li>
+						<li><a href="#">board</a></li>
+						<!-- <li><a href="#">스토어</a></li> -->
 					</ul>
 				</div>
 				<div class="DB_mask">
@@ -102,42 +102,41 @@
 							
 							<ul>
 								<!--이미지메뉴인 경우-->
-								<li><a href="#">주거공간</a></li>
-								<li><a href="#">사무공간</a></li>
-								<li><a href="#">부분시공</a></li>
+								<li><a href="#">리스트</a></li>
+								<li><a href="#">수정</a></li>
+								<li><a href="#">삭제</a></li>
 								<li></li>
 							</ul>		
 							<ul>
 								<!--텍스트메뉴인 경우-->
-								<li><a href="#">궁금해요</a></li>
-								<li><a href="#">내방어때요</a></li>
-								<li><a href="board/table_form.jsp">집닥후기</a></li>
+								<li><a href="#">리스트</a></li>
+								<li><a href="#">수정</a></li>
+								<li><a href="board/table_form.jsp">삭제</a></li>
 								<li></li>
 							</ul>		
 							<ul>
-								<li><a href="#">인테리어 팁</a></li>
-								<li><a href="#">집닥맨 다이어리</a></li>
-								<li><a href="#">집닥 소식</a></li>
-								<li><a href="#">집닥 이벤트</a></li>
+								<li><a href="#">리스트</a></li>
+								<li><a href="#">수정</a></li>
+								<li><a href="#">삭제</a></li>
 							</ul>		
 							<ul>
-								<li><a href="#">파트너스 목록</a></li>
-								<li><a href="#">파트너스 문의</a></li>
-								<li><a href="#">자료실</a></li>
+								<li><a href="#">리스트</a></li>
+								<li><a href="#">수정</a></li>
+								<li><a href="#">삭제</a></li>
 								<li></li>
 							</ul>
 							<ul>
-								<li><a href="#">상세견적상담</a></li>
-								<li><a href="#">견적신청현황</a></li>
-								<li><a href="#">협의확인서현황</a></li>
+								<li><a href="#">리스트</a></li>
+								<li><a href="#">수정</a></li>
+								<li><a href="#">삭제</a></li>
 								<li></li>
 							</ul>
-							<ul>
+<!-- 							<ul>
 								<li><a href="#">집닥이 야심차게<br />
 							        <span style="margin: 1px"></span>준비한 특별한<br />
 								 <span style="margin: 1px"></span>상품을 만나보세요</a></li>
 								<li></li>
-							</ul>
+							</ul> -->
 						</div>
 						
 					</div>
