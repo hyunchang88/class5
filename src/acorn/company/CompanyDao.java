@@ -1,6 +1,4 @@
-package test.company.dao;
-
-import test.company.dto.CompanyDto;
+package acorn.company;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,7 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
 import acorn.util.DbcpBean;
+
 
 public class CompanyDao {
 	private static CompanyDao dao;
@@ -163,12 +163,40 @@ public class CompanyDao {
 		//목록 리턴
 		return list;
 	}
+	public List<CompanyDto> getSearchList(String workArea){
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		List<CompanyDto> list=new ArrayList<CompanyDto>();
+		try {
+			conn = new DbcpBean().getConn();
+			String sql = "select companyname, companyceophone from company where workarea like '?'";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, workArea);
+			rs = pstmt.executeQuery();
+			while (rs.next()) {
+				String companyname=rs.getString("companyName");
+				String companyceophone=rs.getString("companyCeoPhone");
+				//글정보를 dto에 담기
+				CompanyDto dto=new CompanyDto();
+				dto.setCompanyName(companyname);
+				dto.setCompanyCeoPhone(companyceophone);
+				//list에 저장한다.
+				list.add(dto);				
+			}
+		} catch (SQLException se) {
+			se.printStackTrace();
+		} finally {
+			try {
+				if (rs != null)
+					rs.close();
+				if (pstmt != null)
+					pstmt.close();
+				if (conn != null)
+					conn.close();
+			} catch (Exception e) {}
+		}
+		return list;		
+	}
 }
-
-
-
-
-
-
-
 
