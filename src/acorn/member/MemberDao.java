@@ -58,22 +58,43 @@ public class MemberDao {
 		}
 	}
 	
-	public List<MemberDto> getList(){
+	public List<MemberDto> getList(){		
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		List<MemberDto> list = new ArrayList<>();
-		String sql = "SELECT * "
-					+ " FROM member "
-					+ "ORDER BY memberName DESC";
+		String sql = "SELECT * FROM member ";
 
 		try {
 			conn = new DbcpBean().getConn();
 			pstmt = conn.prepareStatement(sql);
 
 			rs = pstmt.executeQuery();
+			
 			while (rs.next()) {
+				String memberId = rs.getString("memberId");
+				String memberName = rs.getString("memberName");
+				String memberPwd = rs.getString("memberPwd");
+				int companyNo = rs.getInt("companyNo");
+				String memberLevel = rs.getString("memberLevel");
+				String memberEmail = rs.getString("memberEmail");
+				String memberPhone = rs.getString("memberPhone");
+				String workArea = rs.getString("workArea");
+				String regDate = rs.getString("regDate");
+				
+				MemberDto dto = new MemberDto();
+				
+				dto.setMemberId(memberId);
+				dto.setMemberName(memberName);
+				dto.setMemberPwd(memberPwd);
+				dto.setCompanyNo(companyNo);
+				dto.setMemberLevel(memberLevel);
+				dto.setMemberEmail(memberEmail);
+				dto.setMemberPhone(memberPhone);
+				dto.setWorkArea(workArea);
+				dto.setRegDate(regDate);
 
+				list.add(dto);
 			}
 		} catch (SQLException se) {
 			se.printStackTrace();
@@ -123,7 +144,7 @@ public class MemberDao {
 		int flag = 0;
 		String sql = "UPDATE member "
 				    +"   SET memberPwd=?, memberName=?, companyNo=?, memberLevel=?, "
-				  +"		 memberEmail=?, memberPhone=?, workArea=? "
+				    +"		 memberEmail=?, memberPhone=?, workArea=? "
 				    +" WHERE wmemberId=? ";
 		
 		try {
