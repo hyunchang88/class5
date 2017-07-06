@@ -30,7 +30,7 @@
 <body>
 	<div class="container">
 		<div class="row contents">
-			<div class="col-xs-12">
+			<div class="col-xs-12" style="text-align:center;">
 				<h3>[ 회원 리스트 화면 ]</h3>
 
 				<table id="memberList" border="1" cellspacing="0">
@@ -77,8 +77,11 @@
 						</tr>
 					<%} %>
 					</tbody>
-				</table>
-			</div>
+				</table><br/>
+
+				<button type="button" class="btn btn-primary"
+					onclick="javascript:location.href='memberInsertForm.jsp'" >회원 가입</button>
+			</div>	
 		</div>
 	</div>
 </body>
