@@ -24,23 +24,23 @@
 	insert into member(memberId, memberPwd, memberName, 
 	   companyNo, memberLevel, memberEmail, memberPhone, workArea, regDate)
 	   values('user01', '0101', '유일위',
-	   23, '9', 'youilwi@naver.com', '010-6517-6369', '인천', SYSDATE);
+	   1, '9', 'youilwi@naver.com', '010-6517-6369', '인천', SYSDATE);
 	insert into member(memberId, memberPwd, memberName, 
 	   companyNo, memberLevel, memberEmail, memberPhone, workArea, regDate)
 	   values('user02', '0202', '박현창',
-	   24, '9', 'hyunchang1234@hanmail.net', '010-4186-6104', '일산', SYSDATE);
+	   2, '9', 'hyunchang1234@hanmail.net', '010-4186-6104', '일산', SYSDATE);
 	insert into member(memberId, memberPwd, memberName, 
 	   companyNo, memberLevel, memberEmail, memberPhone, workArea, regDate)
 	   values('user03', '0303', '문병우',
-	   25, '9', 'mun@naver.com', '010-6517-6369', '경기도', SYSDATE);
+	   3, '9', 'mun@naver.com', '010-6517-6369', '경기도', SYSDATE);
 	insert into member(memberId, memberPwd, memberName, 
 	   companyNo, memberLevel, memberEmail, memberPhone, workArea, regDate)
 	   values('user04', '0404', '유일위',
-	   26, '9', 'sang@naver.com', '010-6517-6369', '제주', SYSDATE);
+	   4, '9', 'sang@naver.com', '010-6517-6369', '제주', SYSDATE);
 	insert into member(memberId, memberPwd, memberName, 
 	   companyNo, memberLevel, memberEmail, memberPhone, workArea, regDate)
 	   values('user05', '0505', '이순신',
-	   27, '1', 'kim@naver.com', '010-6517-6369', '전라도', SYSDATE);
+	   5, '1', 'kim@naver.com', '010-6517-6369', '전라도', SYSDATE);
 	   
 	insert into orderRequest(orderNo, memberId, workNo, companyNo, orderTitle,
 	   orderPrice, orderComm, orderStatus, orderResult, startDate, enddate)

@@ -123,7 +123,18 @@ public class MemberDao {
 
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
-
+				String memberid=rs.getString("memberid");
+				String memberpwd=rs.getString("memberpwd");
+				String membername=rs.getString("membername");
+				int companyno=rs.getInt("companyno");
+				String memberlevel=rs.getString("memberlevel");
+				String memberemail=rs.getString("memberemail");
+				String memberphone=rs.getString("memberphone");
+				String workarea=rs.getString("workarea");
+				String regdate=rs.getString("regdate");
+			
+				//글정보를 dto에 담기
+				dto=new MemberDto(memberid, memberpwd, membername, companyno, memberlevel, memberemail, memberphone, workarea,regdate);
 			}
 		} catch (SQLException se) {
 			se.printStackTrace();

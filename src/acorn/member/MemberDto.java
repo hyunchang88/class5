@@ -26,7 +26,7 @@ public class MemberDto {
 		this.workArea = workArea;
 		this.regDate = regDate;
 	}
-
+	
 	public String getMemberId() {
 		return memberId;
 	}

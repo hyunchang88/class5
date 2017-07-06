@@ -120,7 +120,43 @@ public class CompanyDao {
 	}//delete()
 	
 	//회사 정보를 수정하는 메소드-곧 업데이트 작업할겁니다.
-
+	public boolean update(CompanyDto dto){
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		int flag = 0;
+		try {
+			conn = new DbcpBean().getConn();
+			String sql = "update company set companyName=?, "
+					+ "companyCeoname=?, "
+					+ "companyCeophone=?, "
+					+ "workarea=?,"
+					+ " workno=? where companyno=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, dto.getCompanyName());
+			pstmt.setString(2, dto.getCompanyCeoname());
+			pstmt.setString(3, dto.getCompanyCeoPhone());
+			pstmt.setString(4, dto.getWorkArea());
+			pstmt.setInt(5, dto.getWorkNo());
+			pstmt.setInt(6, dto.getCompanyNo());			
+			flag = pstmt.executeUpdate();
+		} catch (SQLException se) {
+			se.printStackTrace();
+		} finally {
+			try {
+				if (pstmt != null)
+					pstmt.close();
+				if (conn != null)
+					conn.close();
+			} catch (Exception e) {
+			}
+		}
+		if (flag > 0) {
+			return true;
+		} else {
+			return false;
+		}
+		
+	}
 	
 	//회사목록을 리턴해주는 메소드
 	public List<CompanyDto> getList(){
