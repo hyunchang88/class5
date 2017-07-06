@@ -8,9 +8,8 @@
 <link rel="stylesheet" href="../resource/css/bootstrap.css" />
 <style>
 
-	.bs-wizard {margin-top: 250px;}
+/* 	.bs-wizard {margin-top: 250px;}
 	
-	/*Form Wizard*/
 	.bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
 	.bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
 	.bs-wizard > .bs-wizard-step + .bs-wizard-step {}
@@ -29,7 +28,7 @@
 	.bs-wizard > .bs-wizard-step:first-child  > .progress {left: 50%; width: 50%;}
 	.bs-wizard > .bs-wizard-step:last-child  > .progress {width: 50%;}
 	.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
-	/*END Form Wizard*/
+	 */
 
 </style>
 </head>
@@ -38,47 +37,114 @@
 <!-- navbar include -->
 <jsp:include page="../navbar.jsp" ></jsp:include>
 
-<div class="container">
-        
-	<div class="row bs-wizard" style="border-bottom:0;">
-		<div class="col-xs-3 bs-wizard-step complete">
-			<div class="text-center bs-wizard-stepnum">Step 1</div>
-			<div class="progress"><div class="progress-bar"></div></div>
-			<a href="#" class="bs-wizard-dot"></a>
-			<div class="bs-wizard-info text-center">Lorem ipsum dolor sit amet.</div>
+<div class="container-fluid" style="margin-top:300px">
+	<div="row">
+		<div class="col-xs-2 left">
+			<div style="height:500px; background:url('resource/images/main.jpg') no-repeat left;"></div>
 		</div>
-		
-		<div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
-			<div class="text-center bs-wizard-stepnum">Step 2</div>
-			<div class="progress"><div class="progress-bar"></div></div>
-			<a href="#" class="bs-wizard-dot"></a>
-			<div class="bs-wizard-info text-center">Nam mollis tristique erat vel tristique. Aliquam erat volutpat. Mauris et vestibulum nisi. Duis molestie nisl sed scelerisque vestibulum. Nam placerat tristique placerat</div>
+		<div class="col-xs-8">
+			<div class="row">
+				<div class="col-xs-3">
+					<h3>리스트</h3>
+					<!-- <ul class="breadcrumb">
+					  <li><a href="#">공지사항</a></li>
+					  <li><a href="#">전체글</a></li>
+					  <li><a href="#">사진방</a></li>
+					</ul> -->
+				</div>
+			</div>	
+			<table class="table table-bordered">
+				<thead style="background-color:#FFD0AF;">
+					<tr>
+						<td>번호</td>
+						<td>글제목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td>작성일</td>
+						<td>작성자</td>
+						<td>조회수</td>
+					</tr>
+				</thead>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			 <div class="text-center">
+				<ul class="pagination">
+					<li><a href="">1</a></li>
+					<li><a href="">2</a>
+					<li><a href="">3</a>
+					<li><a href="">4</a>
+				 	<li><a href="">5</a>
+				</ul>
+			</div>	
 		</div>
-		<div class="col-xs-3 bs-wizard-step active"><!-- complete -->
-			<div class="text-center bs-wizard-stepnum">Step 3</div>
-			<div class="progress"><div class="progress-bar"></div></div>
-			<a href="#" class="bs-wizard-dot"></a>
-			<div class="bs-wizard-info text-center">Integer semper dolor ac auctor rutrum. Duis porta ipsum vitae mi bibendum bibendum</div>
-		</div>
-		
-		<div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
-			<div class="text-center bs-wizard-stepnum">Step 4</div>
-			<div class="progress"><div class="progress-bar"></div></div>
-			<a href="#" class="bs-wizard-dot"></a>
-			<div class="bs-wizard-info text-center"> Curabitur mollis magna at blandit vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</div>
-		</div>
+		<div class="col-xs-2 left">
+			<div style="height:500px; background:url('resource/images/main.jpg') no-repeat right;"></div>
+		</div>	
 	</div>
-	
-	<div class="row">
-		
-		
-		<button class="btn btn-waring">이전</button>
-		<button class="btn btn-primary">다음</button>
-	</div>
-	
-</div> <!-- end container -->
+</div> <!-- end container-fluid -->
 
+
+<script type="text/javascript" src="/class5/resource/js/jquery-3.2.0.js"></script><!--jquery라이브러리-->
 <script>
+
+/* 
+	$(".previousBtn").click(function(){
+		$(".active")
+		.removeClass("active")
+		.addClass("disabled")
+		.children()
+		.removeClass("bs-wizard-dot:after")
+		.parent()
+		.prev()
+		.addClass("active")
+		.children()
+		.addClass("bs-wizard-dot:after");
+	});
+	
+	$(".nextBtn").click(function(){
+		$(".active")
+		.removeClass("active")
+		.addClass("complete")
+		.children()
+		.removeClass("bs-wizard-dot:after")
+		.parent()
+		.next()
+		.addClass("active")
+		.children()
+		.addClass("bs-wizard-dot:after");
+	}); */
 	
 </script>
 

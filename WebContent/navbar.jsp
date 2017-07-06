@@ -23,6 +23,11 @@
 		right: 0;
 		z-index: 100;
 	}
+	.logout{
+		position:absolute;
+		display:inline-block;
+		right:0;
+	}
 </style>
 
 <div id="navbar">
@@ -43,11 +48,13 @@
 						</ul>
 							
 							<%if( id != null ){ %>
-								<%-- <p> <strong><a href="users/private/info.jsp"><%=id %></a></strong> 회원님 로그인 중....</p> --%>
-								<li><a href="/class5/users/signout.jsp">로그아웃</a></li>
+								<p> <strong><a href="users/private/info.jsp"><%=id %></a></strong> 회원님 로그인 중...<br/>
+									<li class="logout"><a href="/class5/users/signout.jsp">로그아웃</a>
+								</p>
+								
 							<%}else{ %>
-								<li><a href="/class5/users/signup_form.jsp">회원가입</a></li>
 								<li><a href="/class5/users/signin_form.jsp?url=<%=cPath%>">로그인</a></li>
+								<li><a href="/class5/users/signup_form.jsp">회원가입</a></li>
 							<%} %>
 					</div>
 					<div class="DB_mask">

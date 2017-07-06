@@ -227,7 +227,7 @@
 				<thead style="background-color:#FFD0AF;">
 					<tr>
 						<td>번호</td>
-						<td>글제목</td>
+						<td>글제목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td>작성일</td>
 						<td>작성자</td>
 						<td>조회수</td>

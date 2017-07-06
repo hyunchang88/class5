@@ -16,7 +16,12 @@
 <link rel="stylesheet" href="../resource/css/bootstrap.css" />
 </head>
 <body>
-<div class="container">
+
+<!-- navbar include -->
+<jsp:include page="../navbar.jsp" ></jsp:include>
+
+
+<div class="container" style="margin-top:250px">
 	
 	<div class="row">
 		<div class="col-sm-6 col-sm-offset-3">
