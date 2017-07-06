@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	//session 에 id 라는 키값으로 저장된 값이 있는지 읽어와 본다.
+	String id=(String)session.getAttribute("id");
+	//context 경로
+	String cPath=request.getContextPath();
+%>
 <link rel="stylesheet" href="../resource/css/bootstrap.css" />
 <link rel="stylesheet" href="../resource/css/font-awesome.css"/>
 <link rel="stylesheet" href="../resource/css/DB_navi24.css" type="text/css"></link>
@@ -35,6 +41,14 @@
 							<li><a href="#">board</a></li>
 							<!-- <li><a href="#">스토어</a></li> -->
 						</ul>
+							
+							<%if( id != null ){ %>
+								<%-- <p> <strong><a href="users/private/info.jsp"><%=id %></a></strong> 회원님 로그인 중....</p> --%>
+								<li><a href="users/signout.jsp">로그아웃</a></li>
+							<%}else{ %>
+								<li><a href="users/signup_form.jsp">회원가입</a></li>
+								<li><a href="users/signin_form.jsp?url=<%=cPath%>">로그인</a></li>
+							<%} %>
 					</div>
 					<div class="DB_mask">
 						<div class="DB_move">
