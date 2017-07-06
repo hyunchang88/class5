@@ -63,7 +63,7 @@
 </head>
 <body>
 
-<!-- <h3>navbar 위치할 공간</h3> -->
+<!-- navbar include -->
 <jsp:include page="navbar.jsp" ></jsp:include>
 
 
