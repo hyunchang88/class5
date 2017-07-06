@@ -14,12 +14,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /*
- * 	/member2/하위의 모든 요청 과
+ * 	/member/하위의 모든 요청 과
  * 	/users/private/하위의 모든 요청에 대해
  * 	필터링 하도록 설정
  */
 
-@WebFilter({"/member2/*","/users/private/*"})
+@WebFilter({"/member/*","/users/private/*"})
 public class LoginFilter implements Filter{
 
 	@Override
