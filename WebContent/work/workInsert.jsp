@@ -200,46 +200,50 @@
 <div class="container">
    <div class="row">
       <div class="col-xs-6 col-xs-push-3">
-         <form action="memberUpdate.jsp" method="post">
+         <form action="insert.jsp" method="post">
             <table class="table table-striped" style="text-align:center">
-               <tr>
-                  <td><label for="name"></label>공사명 :</td>
-                  <td><input type="text" id="name" name="name" class="form-control"/></td>
+            	<tr>
+                  <td><label for="workno"></label>번호 :</td>
+                  <td></td>
                </tr>
                <tr>
-                  <td><label for="type"></label>공사구분 :</td>
-                  <td><input type="text" id="type" name="type" class="form-control" /></td>
+                  <td><label for="workname"></label>공사명 :</td>
+                  <td><input type="text" id="workname" name="workname" class="form-control"/></td>
                </tr>
                <tr>
-                  <td><label for="space"></label>공사면적 :</td>
-                  <td><input type="text" id="space" name="space" class="form-control" /></td>
+                  <td><label for="workdesc"></label>공사구분 :</td>
+                  <td><input type="text" id="workdesc" name="workdesc" class="form-control" /></td>
                </tr>
                <tr>
-                  <td><label for="area"></label>공사지역 :</td>
-                  <td><input type="text" id="area" name="area" class="form-control" /></td>
+                  <td><label for="workspace"></label>공사면적 :</td>
+                  <td><input type="text" id="workspace" name="workspace" class="form-control" /></td>
                </tr>
                <tr>
-                  <td><label for="term"></label>공사기간 :</td>
-                  <td><select name="term" id="term" class="form-control">
+                  <td><label for="workarea"></label>공사지역 :</td>
+                  <td><input type="text" id="workarea" name="workarea" class="form-control" /></td>
+               </tr>
+               <tr>
+                  <td><label for="workterm"></label>공사기간 :</td>
+                  <td><select name="workterm" id="workterm" class="form-control">
                         <option value="">선택</option>
-                        <option value="week">1~2주</option>
+                        <option value="1week">1~2주</option>
                         <option value="2week">2~3주</option>
-                        <option value="3week">3~4주</option>
-                        <option value="month">한달이상</option>
+                        <option value="3eek">3~4주</option>
+                        <option value="1month over">한달이상</option>
                      </select></td>
                </tr>
                <tr>
-                  <td><label for="how"></label>시공방법 :</td>
-                  <td><input type="text" id="how" name="how" class="form-control"/></td>
+                  <td><label for="workhow"></label>시공방법 :</td>
+                  <td><input type="text" id="workhow" name="workhow" class="form-control"/></td>
                </tr>
                <tr>
-                  <td><label for="company"></label>시공업체 :</td>
-                  <td><input type="text" id="company" name="company" class="form-control"/></td>
+                  <td><label for="workcompany"></label>시공업체 :</td>
+                  <td><input type="text" id="workcompany" name="workcompany" class="form-control"/></td>
                </tr>
-               <tr>
+             	<tr>
                   <td><label for="pic">첨부사진(파일)</label></td>
                   <td><input type="file" name="pic" id="pic" class="form-control"/></td>
-               </tr>
+               </tr> 
             </table>
             <div style="float:right";>
                <button type="submit" class="btn btn-primary">확인</button>
