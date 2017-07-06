@@ -93,8 +93,8 @@
 								</ul>
 								<ul>
 									<!-- board -->
-									<li><a href="#">리스트</a></li>
-									<li><a href="#">삽입</a></li>
+									<li><a href="/class5/board/table_form.jsp">리스트</a></li>
+									<li><a href="/class5/board/writing.jsp">삽입</a></li>
 									<li><a href="#">수정</a></li>
 									<li><a href="#">삭제</a></li>
 									<li></li>
