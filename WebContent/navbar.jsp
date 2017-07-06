@@ -78,10 +78,10 @@
 								</ul>		
 								<ul>
 									<!-- orderRequest -->
-									<li><a href="#">리스트</a></li>
-									<li><a href="#">삽입</a></li>
-									<li><a href="#">수정</a></li>
-									<li><a href="#">삭제</a></li>
+									<li><a href="orderRequest/orderRequestList.jsp">리스트</a></li>
+									<li><a href="orderRequest/orderRequestInsert.jsp">삽입</a></li>
+									<li><a href="orderRequest/orderRequestUpdate.jsp">수정</a></li>
+									<li><a href="orderRequest/orderRequestDelete.jsp">삭제</a></li>
 									<li></li>
 								</ul>
 								<ul>
