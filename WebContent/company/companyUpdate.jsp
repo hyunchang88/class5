@@ -27,7 +27,7 @@
 		location.href="../index.jsp";
 		</script>
 <%	}%>
-<%	System.out.println("요기3");
+<%	System.out.println(dto2.getCompanyNo());
 	   // 수정할 글의 자세한 정보를 얻어온다.
 %>    
     
@@ -46,25 +46,25 @@
 	</div>
 	<h3>회사 정보 수정 페이지입니다.</h3>
 	<form action="update.jsp" method="post">
-      <input type="hidden" name="companyno" value="<%=dto2.getCompanyNo() %>"/>
+      <input type="hidden" name="companyNo" value="<%=dto2.getCompanyNo() %>"/>
       
       <label for="companyno">회사번호</label>
       <input type="text" id="companyNo" value="<%=dto2.getCompanyNo() %>" disabled="disabled"/><br/>
       
       <label for="companyname">회사명</label>
-      <input type="text" name="companyname" id="companyName" value="<%=dto2.getCompanyName() %>" disabled="disabled"/><br/>
+      <input type="text" name="companyName" id="companyName" value="<%=dto2.getCompanyName() %>"/><br/>
       
       <label for="companyceoname">대표명</label>
-      <input type="text" name="companyceoname" id="companyCeoname" value="<%=dto2.getCompanyCeoname() %>"/><br/>
+      <input type="text" name="companyCeoname" id="companyCeoname" value="<%=dto2.getCompanyCeoname() %>"/><br/>
       
       <label for="companyceophone">대표연락처</label>
-      <input type="text" name="companyceophone" id="companyCeoPhone" value="<%=dto2.getCompanyCeoPhone() %>"/><br/>
+      <input type="text" name="companyCeoPhone" id="companyCeoPhone" value="<%=dto2.getCompanyCeoPhone() %>"/><br/>
       
       <label for="workarea">지역</label>
-      <input type="text" name="workarea" id="workArea" value="<%=dto2.getWorkArea() %>"/><br/>
+      <input type="text" name="workArea" id="workArea" value="<%=dto2.getWorkArea() %>"/><br/>
       
-	  <label for="workno">대표연락처</label>
-      <input type="text" name="workno" id="workNo" value="<%=dto2.getWorkNo() %>"/><br/>	 
+	  <label for="workno">workno</label>
+      <input type="text" name="workNo" id="workNo" value="<%=dto2.getWorkNo() %>"/><br/>	 
       
       <button type="submit">수정확인</button>
       <button type="reset">취소</button>

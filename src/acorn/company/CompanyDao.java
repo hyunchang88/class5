@@ -73,6 +73,7 @@ public class CompanyDao {
 				dto.setCompanyCeoPhone(rs.getString("companyCeoPhone"));
 				dto.setWorkArea(rs.getString("workArea"));
 				dto.setWorkNo(rs.getInt("workNo"));
+				dto.setCompanyNo(companyNo);
 			}
 		} catch (SQLException se) {
 			se.printStackTrace();

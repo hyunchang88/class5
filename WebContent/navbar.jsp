@@ -6,23 +6,6 @@
 	//context 경로
 	String cPath=request.getContextPath();
 %>
-<!-- 
-<link rel="stylesheet" href="resource/css/bootstrap.css" />
-<link rel="stylesheet" href="resource/css/font-awesome.css"/>
-<link rel="stylesheet" href="resource/css/DB_navi24.css" type="text/css"></link>
-
-<script type="text/javascript" src="resource/js/jquery-3.2.0.js"></script> -->
-
-<link rel="stylesheet" href="../resource/css/bootstrap.css" />
-
-<script type="text/javascript" src="../resource/js/jquery.DB_naviFullWideMove.min.js"></script>
-
-<style>
-
-</style>
-
-
-
 <div class="container">
 		<div class="row">
 			<div class="navbar navbar-default navbar-fixed-top">
@@ -59,24 +42,24 @@
 							<div class="DB_subSet">							
 								<ul>
 									<!-- work -->
-									<li><a href="work/workList.jsp">리스트</a></li>
-									<li><a href="../work/workInsert.jsp">삽입</a></li>
-									<li><a href="../work/workUpdate.jsp">수정</a></li>
-									<li><a href="../work/workDelete.jsp">삭제</a></li>
+									<li><a href="/class5/work/workList.jsp">리스트</a></li>
+									<li><a href="/class5/work/workInsert.jsp">삽입</a></li>
+									<li><a href="/class5/work/workUpdate.jsp">수정</a></li>
+									<li><a href="/class5/work/workDelete.jsp">삭제</a></li>
 									<li></li>
 								</ul>		
 								<ul><!-- company -->
-									<li><a href="company/companyList.jsp">리스트</a></li>
-									<li><a href="company/companyInsert.jsp">삽입</a></li>
-									<li><a href="company/companyUpdate.jsp">수정</a></li>
-									<li><a href="company/companyDelete.jsp">삭제</a></li>
+									<li><a href="/class5/company/companyList.jsp">리스트</a></li>
+									<li><a href="/class5/company/companyInsert.jsp">삽입</a></li>
+									<li><a href="/class5/company/companyUpdate.jsp">수정</a></li>
+									<li><a href="/class5/company/companyDelete.jsp">삭제</a></li>
 									<li></li>
 								</ul>		
 								<ul>
-									<li><a href="member/memberList.jsp">리스트</a></li>
-									<li><a href="member/memberInsert.jsp">삽입</a></li>
-									<li><a href="member/memberUpdate.jsp">수정</a></li>
-									<li><a href="member/memberDelete.jsp">삭제</a></li>
+									<li><a href="/class5/member/memberList.jsp">리스트</a></li>
+									<li><a href="/class5/member/memberInsert.jsp">삽입</a></li>
+									<li><a href="/class5/member/memberUpdate.jsp">수정</a></li>
+									<li><a href="/class5/member/memberDelete.jsp">삭제</a></li>
 								</ul>		
 								<ul>
 									<!-- orderRequest -->
