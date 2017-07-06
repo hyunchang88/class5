@@ -4,9 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>orderRequestUpdate.jsp</title>
 </head>
 <body>
+
+<!-- navbar include -->
+<jsp:include page="../navbar.jsp" ></jsp:include>
+
+수정 페이지
+
 
 </body>
 </html>

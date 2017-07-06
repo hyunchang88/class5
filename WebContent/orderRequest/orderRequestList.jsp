@@ -69,9 +69,18 @@
 		</div>
 	</div>
 	
+	<div class="row">
+		
+		
+		<button class="btn btn-waring">이전</button>
+		<button class="btn btn-primary">다음</button>
+	</div>
+	
 </div> <!-- end container -->
 
-
+<script>
+	
+</script>
 
 </body>
 </html>
