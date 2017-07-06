@@ -1,92 +1,108 @@
 package acorn.work;
 
 public class WorkDto {
-   private String name;
-   private String type;
-   private String space;
-   private String area;
-   private String term;
-   private String how;
-   private String company;
+   private Number workno;
+   private String workName;
+   private String workDesc;
+   private String workspace;
+   private String workarea;
+   private String workterm;
+   private String workhow;
+   private String workcompany;
    private String pic;
+
    
    public WorkDto(){}
-
-   public WorkDto(String name, String type, String space, String area, String term, String how, String company,
-         String pic) {
-      super();
-      this.name = name;
-      this.type = type;
-      this.space = space;
-      this.area = area;
-      this.term = term;
-      this.how = how;
-      this.company = company;
-      this.pic = pic;
-   }
-
-   public String getName() {
-      return name;
-   }
-
-   public void setName(String name) {
-      this.name = name;
-   }
-
-   public String getType() {
-      return type;
-   }
-
-   public void setType(String type) {
-      this.type = type;
-   }
-
-   public String getSpace() {
-      return space;
-   }
-
-   public void setSpace(String space) {
-      this.space = space;
-   }
-
-   public String getArea() {
-      return area;
-   }
-
-   public void setArea(String area) {
-      this.area = area;
-   }
-
-   public String getTerm() {
-      return term;
-   }
-
-   public void setTerm(String term) {
-      this.term = term;
-   }
-
-   public String getHow() {
-      return how;
-   }
-
-   public void setHow(String how) {
-      this.how = how;
-   }
-
-   public String getCompany() {
-      return company;
-   }
-
-   public void setCompany(String company) {
-      this.company = company;
-   }
-
-   public String getPic() {
-      return pic;
-   }
-
-   public void setPic(String pic) {
-      this.pic = pic;
-   };
    
+	public WorkDto(Number workno, String workName, String workDesc, String workspace, String workarea, String workterm,
+			String workhow, String workcompany, String pic) {
+		super();
+		this.workno = workno;
+		this.workName = workName;
+		this.workDesc = workDesc;
+		this.workspace = workspace;
+		this.workarea = workarea;
+		this.workterm = workterm;
+		this.workhow = workhow;
+		this.workcompany = workcompany;
+		this.pic = pic;
+	}
+   
+	public Number getWorkno() {
+		return workno;
+	}
+	
+	public void setWorkno(Number workno) {
+		this.workno = workno;
+	}
+	
+	public String getWorkName() {
+		return workName;
+	}
+	
+	public void setWorkName(String workName) {
+		this.workName = workName;
+	}
+	
+	public String getWorkDesc() {
+		return workDesc;
+	}
+	
+	public void setWorkDesc(String workDesc) {
+		this.workDesc = workDesc;
+	}
+	
+	public String getWorkspace() {
+		return workspace;
+	}
+	
+	public void setWorkspace(String workspace) {
+		this.workspace = workspace;
+	}
+	
+	public String getWorkarea() {
+		return workarea;
+	}
+	
+	public void setWorkarea(String workarea) {
+		this.workarea = workarea;
+	}
+	
+	public String getWorkterm() {
+		return workterm;
+	}
+	
+	public void setWorkterm(String workterm) {
+		this.workterm = workterm;
+	}
+	
+	public String getWorkhow() {
+		return workhow;
+	}
+	
+	public void setWorkhow(String workhow) {
+		this.workhow = workhow;
+	}
+	
+	public String getWorkcompany() {
+		return workcompany;
+	}
+	
+	public void setWorkcompany(String workcompany) {
+		this.workcompany = workcompany;
+	}
+	
+	public String getPic() {
+		return pic;
+	}
+	
+	public void setPic(String pic) {
+		this.pic = pic;
+	}
+	
+
+
+
+
+  
 }
