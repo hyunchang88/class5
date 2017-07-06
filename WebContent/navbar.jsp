@@ -37,7 +37,7 @@
 			<div>
 				<div id="DB_navi24">
 					<div class="DB_wrap">
-						<h1 style="font-weight: bold; font-family: arial;">이집닥</h1>
+						<h1 style="font-weight: bold; font-family: arial;"><a href="/class5/index.jsp" style="text-decoration: none; color: black;">이집닥</a></h1>
 						<ul class="DB_main" style="color: black">
 							<li><a href="#">work</a></li>
 							<li><a href="#">company</a></li>
@@ -49,7 +49,7 @@
 							
 							<%if( id != null ){ %>
 								<p> <strong><a href="users/private/info.jsp"><%=id %></a></strong> 회원님 로그인 중...<br/>
-									<li class="logout"><a href="/class5/users/signout.jsp">로그아웃</a>
+									<li class="logout"><a href="/class5/users/signout.jsp">로그아웃</a></li>
 								</p>
 								
 							<%}else{ %>
@@ -61,7 +61,6 @@
 						<div class="DB_move">
 							
 							<div class="DB_subSet">
-								
 								<ul>
 									<!-- work -->
 									<li><a href="/class5/work/workList.jsp">리스트</a></li>
@@ -79,7 +78,7 @@
 								</ul>		
 								<ul>
 									<li><a href="/class5/member/memberList.jsp">리스트</a></li>
-									<li><a href="/class5/member/memberInsert.jsp">삽입</a></li>
+									<li><a href="/class5/member/memberInsertForm.jsp">삽입</a></li>
 									<li><a href="/class5/member/memberUpdate.jsp">수정</a></li>
 									<li><a href="/class5/member/memberDelete.jsp">삭제</a></li>
 								</ul>		

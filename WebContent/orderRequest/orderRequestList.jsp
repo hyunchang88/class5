@@ -1,5 +1,12 @@
+<%@page import="acorn.company.CompanyDto"%>
+<%@page import="java.util.List"%>
+<%@page import="acorn.company.CompanyDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	CompanyDao dao = CompanyDao.getInstance();
+	List<CompanyDto> list = dao.getList();
+%>	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -56,50 +63,23 @@
 			<table class="table table-bordered">
 				<thead style="background-color:#FFD0AF;">
 					<tr>
-						<td>번호</td>
-						<td>글제목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td>회사번호</td>
+						<td>회사이름&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td>작성일</td>
 						<td>작성자</td>
 						<td>조회수</td>
 					</tr>
 				</thead>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
+				<tbody>
+ 					<%for(CompanyDto tmp : list){ %>
+						<tr>
+							<td><%=tmp.getCompanyNo() %></td>
+							<td><%=tmp.getCompanyName() %></td>
+						</tr>
+					<%} %>
+					</tbody>
 			</table>
-			 <div class="text-center">
+<!-- 			 <div class="text-center">
 				<ul class="pagination">
 					<li><a href="">1</a></li>
 					<li><a href="">2</a>
@@ -107,7 +87,7 @@
 					<li><a href="">4</a>
 				 	<li><a href="">5</a>
 				</ul>
-			</div>	
+			</div>	 -->
 		</div>
 		<div class="col-xs-2 left">
 			<div style="height:500px; background:url('resource/images/main.jpg') no-repeat right;"></div>

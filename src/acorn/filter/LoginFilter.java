@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /*
- * 	/member/하위의 모든 요청 과
+ * 	"work,company,member,orderRequest 하위의 모든 요청 과
  * 	/users/private/하위의 모든 요청에 대해
  * 	필터링 하도록 설정
  */

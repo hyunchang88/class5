@@ -167,8 +167,7 @@ public class UsersDao {
 		int flag = 0;
 		try {
 			conn = new DbcpBean().getConn();
-			String sql = "UPDATE member SET memberPwd=?,memberEmail=? "
-					+"WHERE memberId=?";
+			String sql = "UPDATE member SET memberPwd=?, memberEmail=? WHERE memberId=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, dto.getMemberPwd());
 			pstmt.setString(2, dto.getMemberEmail());
