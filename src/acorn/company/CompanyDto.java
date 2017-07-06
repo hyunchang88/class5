@@ -7,11 +7,12 @@ public class CompanyDto {
 	private String companyCeoPhone;
 	private String workArea;
 	private int workNo;
+	private int companyrowNo;
 	
 	public CompanyDto(){}
 
 	public CompanyDto(int companyNo, String companyName, String companyCeoname, String companyCeoPhone, String workArea,
-			int workNo) {
+			int workNo, int companyrowNo) {
 		super();
 		this.companyNo = companyNo;
 		this.companyName = companyName;
@@ -19,6 +20,7 @@ public class CompanyDto {
 		this.companyCeoPhone = companyCeoPhone;
 		this.workArea = workArea;
 		this.workNo = workNo;
+		this.companyrowNo = companyrowNo;
 	}
 
 	public int getCompanyNo() {
@@ -69,4 +71,12 @@ public class CompanyDto {
 		this.workNo = workNo;
 	}
 
+	public int getCompanyrowNo() {
+		return companyrowNo;
+	}
+
+	public void setCompanyrowNo(int companyrowNo) {
+		this.companyrowNo = companyrowNo;
+	}
+	
 }

@@ -132,7 +132,7 @@ public class CompanyDao {
 		System.out.println("어레이객체 2");
 		try {
 			conn = new DbcpBean().getConn();
-			String sql = "select companyNo,companyName from company order by companyNo";
+			String sql = "select companyNo,companyName,companyCeophone from company order by companyNo";
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			System.out.println("어레이객체 3");
@@ -140,11 +140,13 @@ public class CompanyDao {
 				System.out.println("어레이객체 4.1");
 				int companyno = rs.getInt("companyNo");
 				String companyname = rs.getString("companyName");
+				String companyceophone = rs.getString("companyceophone");
 				//글정보를 dto에 담아서
 				System.out.println("어레이객체 4.2");
 				CompanyDto dto=new CompanyDto();
 				dto.setCompanyNo(companyno);
 				dto.setCompanyName(companyname);
+				dto.setCompanyCeoPhone(companyceophone);
 				//list어레이에 객체를 저장한다.
 				System.out.println("어레이객체 4.3");
 				list.add(dto);
@@ -202,5 +204,8 @@ public class CompanyDao {
 		}
 		return list;		
 	}
+	
+	//간단한 페이지 처리
+
 }
 
