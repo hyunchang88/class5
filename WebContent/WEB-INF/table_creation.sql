@@ -1,7 +1,13 @@
 CREATE TABLE work(
-   workNo NUMBER(7) CONSTRAINT work_workNo_pk PRIMARY KEY,
-   workName VARCHAR2(50) NOT NULL,
-   workDesc VARCHAR2(300)
+   workno NUMBER(7) CONSTRAINT work_workNo_pk PRIMARY KEY,
+   workname VARCHAR2(200) NOT NULL,
+   workdesc VARCHAR2(300),
+   workspace VARCHAR2(200),
+   workarea VARCHAR2(200),
+   workterm VARCHAR2(200),
+   workhow VARCHAR2(200), 
+   workcompany VARCHAR2(300),
+   pic VARCHAR2(600)
 );
 
 CREATE SEQUENCE workNo_SEQ;
