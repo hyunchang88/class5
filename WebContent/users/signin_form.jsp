@@ -41,11 +41,11 @@
 				
 			</div>
 	
-			<div class="checkbox">
+			<!-- <div class="checkbox">
 				<label>
 					<input type="checkbox"> 아이디 저장
 				</label>
-			</div>
+			</div> -->
 			
 			<button type="submit" class="btn btn-primary">로그인</button>
 			<button type="reset" class="btn btn-warning"  onclick="location.href='../index.jsp'">뒤로</button>

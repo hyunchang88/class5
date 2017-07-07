@@ -1,4 +1,4 @@
-<%@page import="acorn.work.dao.WorkDao"%>
+<%@page import="acorn.work.WorkDao"%>
 <%@page import="java.util.List"%>
 <%@page import="acorn.work.WorkDto"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -20,21 +20,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <!--<meta name="viewport" content="width=1000px" />-->
-<title>index.html</title>
+<title>work/workList.jsp</title>
 
-<link rel="stylesheet" href="../resource/css/bootstrap.css" />
-
-<link rel="stylesheet" href="../resource/css/font-awesome.css"/>
-
-<link rel="stylesheet" href="../resource/js/DB_navi24.css" type="text/css"></link>
-
-<link rel="stylesheet" href="../resource/css/jquery.bxslider.css" />
-
-<script type="text/javascript" src="../resource/js/jquery.DB_naviFullWideMove.min.js"></script>
-
-<script type="text/javascript" src="../resource/js/jquery-3.2.0.js"></script><!--jquery라이브러리-->
-
-<script type="text/javascript" src="../resource/js/jquery.bxslider.min.js"></script>
 
 
 <style>
@@ -44,37 +31,6 @@
          padding-top: 100px;
       }
 
-      #navi{
-         position: absolute;
-         left: 0;
-         width: 200px;
-      }
-      /* #navi2{
-         position: absolute;
-         right: 0;
-         width: 200px;
-      } */
-      /* 좌우 마진 이용하기 */
-      /* #content{
-         margin-left: 200px;
-         margin-right: 200px;
-      } */
-      
-      
-
-      /* 로그인 회원가입 고객센터*/
-          .log1 li{
-            list-style-type: none;
-            float:left;
-            padding-right: 12px;
-         }
-       .log1 li a{
-            padding : 5px;
-         }
-        /* 전화번호 */
-      .phone{
-         font-size: 25px;
-      }
    </style>
    
 </head>
@@ -83,19 +39,6 @@
 <!-- <h3>navbar 위치할 공간</h3> -->
 <jsp:include page="../navbar.jsp" ></jsp:include>
 
-
-   <%if( id != null ){ %>
-      <p> <strong><a href="users/private/info.jsp"><%=id %></a></strong> 회원님 로그인 중....</p>
-      <a href="users/signout.jsp">로그아웃</a>
-   <%} %>
-
-<div id="navi">
-   <ul>
-      <li><a href="users/signup_form.jsp">회원가입</a></li>
-      <li><a href="users/signin_form.jsp?url=<%=cPath%>">로그인</a></li>
-      <li><a href="member/play.jsp">회원전용 공간으로 가기</a></li>
-   </ul>
-</div>
 
 <div class="container">
    <div style="margin: 20px 0;"></div>

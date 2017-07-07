@@ -10,6 +10,9 @@
 	<title>memberInsert.jsp</title>
 	<link rel="stylesheet" href="../resource/css/bootstrap.css" />
 	<style>
+		body{
+			padding-top:150px;
+		}
 		th, td{
 			padding: 5px;
 		}
@@ -23,6 +26,10 @@
 </head>
 
 <body>
+
+<!-- <h3>navbar 위치할 공간</h3> -->
+<jsp:include page="../navbar.jsp" ></jsp:include>
+
 	<div class="container">
 		<div class="col-xs-4 col-xs-offset-4 mainContents">
 			<form id="memberInsertForm" action="/memberInsertAction" method="post">

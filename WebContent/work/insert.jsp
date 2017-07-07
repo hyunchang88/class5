@@ -1,4 +1,4 @@
-<%@page import="acorn.work.dao.WorkDao"%>
+<%@page import="acorn.work.WorkDao"%>
 <%@page import="acorn.work.WorkDto"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"

@@ -6,6 +6,17 @@
 	//context 경로
 	String cPath=request.getContextPath();
 %>
+<link rel="stylesheet" href="/class5/resource/css/bootstrap.css" />
+<link rel="stylesheet" href="/class5/resource/css/font-awesome.css"/>
+<link rel="stylesheet" href="/class5/resource/js/DB_navi24.css" type="text/css"></link>
+<script type="text/javascript" src="/class5/resource/js/jquery-3.2.0.js"></script><!--jquery라이브러리-->
+<script type="text/javascript" src="/class5/resource/js/jquery.DB_naviFullWideMove.min.js"></script>
+<style>
+	a{
+		text_decoration:none;
+		color:black;
+	}
+</style>
 <div class="container">
 		<div class="row">
 			<div class="navbar navbar-default navbar-fixed-top">
@@ -19,7 +30,7 @@
 				</div>
 				<div id="DB_navi24" class="collapse navbar-collapse two">
 					<div class="DB_wrap">
-						<h1 style="font-weight: bold; font-family: arial;">이집닥</h1>
+						<h1 style="font-weight: bold; font-family: arial;"><a href="/class5/index.jsp">이집닥</a></h1>
 						<ul class="DB_main nav navbar-nav" style="color: black">
 							<li><a href="#">work</a></li>
 							<li><a href="#">company</a></li>
@@ -31,10 +42,10 @@
 							
 							<%if( id != null ){ %>
 								<%-- <p> <strong><a href="users/private/info.jsp"><%=id %></a></strong> 회원님 로그인 중....</p> --%>
-								<li><a href="users/signout.jsp">로그아웃</a></li>
+								<li><a href="/class5/users/signout.jsp">로그아웃</a></li>
 							<%}else{ %>
-								<li><a href="users/signup_form.jsp">회원가입</a></li>
-								<li><a href="users/signin_form.jsp?url=<%=cPath%>">로그인</a></li>
+								<li><a href="/class5/users/signin_form.jsp?url=<%=cPath%>">로그인</a></li>
+								<li><a href="/class5/users/signup_form.jsp">회원가입</a></li>							
 							<%} %>
 					</div>
 					<div class="DB_mask">
@@ -44,37 +55,35 @@
 									<!-- work -->
 									<li><a href="/class5/work/workList.jsp">리스트</a></li>
 									<li><a href="/class5/work/workInsert.jsp">삽입</a></li>
-									<li><a href="/class5/work/workUpdate.jsp">수정</a></li>
-									<li><a href="/class5/work/workDelete.jsp">삭제</a></li>
+									<!-- <li><a href="/class5/work/workUpdate.jsp">수정</a></li>
+									<li><a href="/class5/work/workDelete.jsp">삭제</a></li> -->
 									<li></li>
 								</ul>		
 								<ul><!-- company -->
 									<li><a href="/class5/company/companyList.jsp">리스트</a></li>
-									<li><a href="/class5/company/companyInsert.jsp">삽입</a></li>
+									<!-- <li><a href="/class5/company/companyInsert.jsp">삽입</a></li> -->
 									<li><a href="/class5/company/companyUpdate.jsp">수정</a></li>
-									<li><a href="/class5/company/companyDelete.jsp">삭제</a></li>
-									<li></li>
+									<!-- <li><a href="/class5/company/companyDelete.jsp">삭제</a></li> -->
 								</ul>		
 								<ul>
 									<li><a href="/class5/member/memberList.jsp">리스트</a></li>
-									<li><a href="/class5/member/memberInsert.jsp">삽입</a></li>
-									<li><a href="/class5/member/memberUpdate.jsp">수정</a></li>
-									<li><a href="/class5/member/memberDelete.jsp">삭제</a></li>
+									<li><a href="/class5/member/memberInsertForm.jsp">삽입</a></li>
+									<!-- <li><a href="/class5/member/memberUpdate.jsp">수정</a></li> -->
+									<!-- <li><a href="/class5/member/memberDelete.jsp">삭제</a></li> -->
 								</ul>		
 								<ul>
 									<!-- orderRequest -->
-									<li><a href="#">리스트</a></li>
-									<li><a href="#">삽입</a></li>
-									<li><a href="#">수정</a></li>
-									<li><a href="#">삭제</a></li>
-									<li></li>
+									<li><a href="/class5/orderRequest/orderRequestList.jsp">리스트</a></li>
+									<li><a href="/class5/orderRequest/orderRequestInsert.jsp">삽입</a></li>
+									<!-- <li><a href="/class5/orderRequest/orderRequestUpdate.jsp">수정</a></li> -->
+									<!-- <li><a href="/class5/orderRequest/orderRequestDelete.jsp">삭제</a></li> -->
 								</ul>
 								<ul>
 									<!-- board -->
-									<li><a href="#">리스트</a></li>
-									<li><a href="#">삽입</a></li>
-									<li><a href="#">수정</a></li>
-									<li><a href="#">삭제</a></li>
+									<li><a href="/class5/board/table_form.jsp">리스트</a></li>
+									<li><a href="/class5/board/writing.jsp">삽입</a></li>
+									<!-- <li><a href="#">수정</a></li>
+									<li><a href="#">삭제</a></li> -->
 									<li></li>
 								</ul>
 							</div>						

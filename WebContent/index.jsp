@@ -13,11 +13,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <!--<meta name="viewport" content="width=1000px" />-->
 <title>index.html</title>
-<link rel="stylesheet" href="resource/css/bootstrap.css" />
+<!-- <link rel="stylesheet" href="resource/css/bootstrap.css" />
 <link rel="stylesheet" href="resource/css/font-awesome.css"/>
 <link rel="stylesheet" href="resource/js/DB_navi24.css" type="text/css"></link>
-<script type="text/javascript" src="resource/js/jquery-3.2.0.js"></script><!--jquery라이브러리-->
-<script type="text/javascript" src="resource/js/jquery.DB_naviFullWideMove.min.js"></script>
+<script type="text/javascript" src="resource/js/jquery-3.2.0.js"></script>jquery라이브러리
+<script type="text/javascript" src="resource/js/jquery.DB_naviFullWideMove.min.js"></script> -->
 <style>
 		body{
 			margin: 0;
